@@ -107,7 +107,7 @@ Use these consent-state labels exactly in the participant tracker:
 
 ## Privacy and incident-handling boundaries
 
-Use research IDs in notes, diary analysis, and synthesis. Store operational contact information separately and do not place names, emails, telephone numbers, precise addresses, diagnoses, detailed health histories, or unrelated family information in the analytical files. Recording is optional and requires explicit separate consent; declining recording does not affect participation. Participants may skip any question or withdraw.
+Use research IDs in notes, diary analysis, and synthesis. Store operational contact information separately and do not place names, emails, telephone numbers, precise addresses, diagnoses, detailed health histories, or unrelated family information in the analytical files. Do not collect continuous monitoring data or photographic proof. Recording is optional and requires explicit separate consent; declining recording does not affect participation. Participants may skip any question or withdraw.
 
 Do not interpret a missed diary entry, unshared activity, or silence as danger. This is non-clinical product research, not monitoring, care, a health assessment, or emergency support. If someone raises an immediate safety concern, pause the research role and follow a separately approved escalation policy; this pack supplies no clinical or emergency advice. Do not reuse materials for model training, marketing, or a materially different purpose without separate consent and appropriate review.
 
