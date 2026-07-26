@@ -11,7 +11,7 @@
 - Prepare a neutral shared note template using the dyad ID and no direct identifiers. Keep individual evidence linked to its original `WA-###` record; paired evidence must not overwrite it.
 - Decide how either person can privately signal a pause or exit. If tension rises, pause, remind both people they can skip or leave, and do not mediate, judge, or seek agreement.
 
-## 1. Consent, boundaries, and ground rules (8–10 minutes)
+## 1. Consent, boundaries, and ground rules (8–9 minutes)
 
 For each person, renew study participation and recording consent separately under `04-consent-and-privacy.md`. Record each choice as `yes`, `no`, `withdrawn`, or `not_asked`. A refusal of recording means notes only and does not bar participation.
 
@@ -29,7 +29,7 @@ Ground rules:
 - Speak from personal experience (“I noticed…” or “I preferred…”), not for the other person.
 - Differences are useful research evidence; neither person has to agree or reveal anything discussed privately.
 
-## 2. Choose one Recent shared event (8–10 minutes)
+## 2. Choose one Recent shared event (8–9 minutes)
 
 Say: “Please choose one recent meal decision or practical support event that you are both comfortable discussing today. It can be something ordinary, something that went well, something awkward, or an event that showed no help was needed.”
 
@@ -37,7 +37,7 @@ If they cannot agree on an event, offer neutral choices: a meal that was cooked,
 
 **Do not lead:** Do not select an event based on private knowledge, call it a problem, or imply that cooking, accepting help, or sharing information is the desired outcome.
 
-## 3. Two turns: same event, separate accounts (14–16 minutes)
+## 3. Two turns: same event, separate accounts (14–15 minutes)
 
 Give equal uninterrupted turns. Ask one person first, then ask the other exactly the same questions. Alternate who starts across sessions where practical.
 
@@ -51,7 +51,7 @@ After both turns, reflect only publicly stated content: “I heard two accounts 
 
 Record agreement, mismatch, and unspoken assumptions without choosing a correct version. A mismatch may be meaningful evidence for `R2`; it is not a problem for the facilitator to resolve.
 
-## 4. Current roles, alternatives, and Previous attempts (10–12 minutes)
+## 4. Current roles, alternatives, and Previous attempts (9–10 minutes)
 
 Ask each person in turn:
 
@@ -65,7 +65,7 @@ Surface no-problem evidence: “Are there parts of the current arrangement that 
 
 **Do not lead:** Do not turn the discussion into a negotiation about a future arrangement. Do not use one person's account to challenge the other.
 
-## 5. Helpful support, unacceptable pressure, and information boundaries (10–12 minutes)
+## 5. Helpful support, unacceptable pressure, and information boundaries (9–10 minutes)
 
 Use a short, turn-by-turn relationship scenario. For example: “Imagine an adult child notices a change in a familiar meal routine and wants to be helpful. The older adult may or may not want to discuss it.”
 
@@ -81,7 +81,7 @@ Then ask: “What, if anything, can you both agree is acceptable?” “Where do
 
 Never show screens, name a proposed product, or ask either person to accept visibility, updates, proof, tracking, or monitoring. Keep the discussion about their relationship and choices.
 
-## 6. Disconfirmation and Close (6–8 minutes)
+## 6. Disconfirmation and Close (6–7 minutes)
 
 Ask both participants:
 
@@ -94,7 +94,7 @@ Summarise only content stated in this session, naming both agreement and differe
 
 Thank both participants. Reconfirm that their individual interviews remain private, that no action is expected of either person, and that each may use the approved withdrawal process. Do not solicit a joint commitment or a solution preference.
 
-## Private facilitator Debrief (after both participants leave; 8–10 minutes)
+## Private facilitator Debrief (after both participants leave; 8–10 minutes, outside the 60-minute participant session)
 
 Do this only after both have left or the session is otherwise private. Do not discuss one person's private individual-interview content with the other person before, during, or after this debrief.
 

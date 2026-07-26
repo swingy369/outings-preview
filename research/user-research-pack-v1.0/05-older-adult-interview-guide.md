@@ -11,7 +11,7 @@
 - Prepare a non-recording note-taking option. Do not record names, precise places, diagnoses, detailed health histories, or unrelated family information in analytical notes.
 - If an urgent safety concern or unnecessary sensitive disclosure arises, pause rather than probe and follow the approved process in `04-consent-and-privacy.md`.
 
-## 1. Consent and opening (5–7 minutes)
+## 1. Consent and opening (5–6 minutes)
 
 Read the researcher introduction and complete the granular consent script in `04-consent-and-privacy.md`. Confirm that participation, audio recording, diary participation, anonymised quotations, and future contact are separate choices. Record each applicable choice using `yes`, `no`, `withdrawn`, or `not_asked`.
 
@@ -27,7 +27,7 @@ Start with rapport that does not frame age, ability, or decline as the topic:
 
 **Do not lead:** Do not ask the participant to diagnose themselves, explain why they cook more or less than someone else, or defend their routine.
 
-## 2. Recent meal reconstruction: last seven days (10–12 minutes)
+## 2. Recent meal reconstruction: last seven days (8–10 minutes)
 
 “Thinking back over the last seven days, please walk me through your meals in whatever order is easiest. Include meals you made, bought, received, skipped, repeated, or did not have to think much about.”
 
@@ -43,7 +43,7 @@ For each day or memorable meal, lightly map:
 
 **Do not lead:** Do not label a repeated, ready-made, delivered, restaurant, family-supported, community, or simple meal as a failure. Do not imply that cooking is the preferred outcome.
 
-## 3. Two Recent decisions in depth (12–15 minutes)
+## 3. Two Recent decisions in depth (10–12 minutes)
 
 Ask for two specific decisions from the reconstruction. Let the participant choose; if helpful, ask for one that went as intended and one that did not.
 
@@ -53,15 +53,17 @@ Ask for two specific decisions from the reconstruction. Let the participant choo
 
 Probe for trigger, steps, choices considered, people involved, effort and trade-offs, result, and whether the participant would choose the same approach again.
 
-### B. A decision that did not go as intended — or a time nothing felt wrong
+### B. A decision that did not go as intended
 
-“Was there a recent meal decision that did not turn out as you wanted? If none comes to mind, tell me about a recent one that was simply fine or satisfactory.”
+First ask: “Thinking about the last seven days, was there a meal decision that did not turn out as you wanted?” If a recent decision exists, select it for this reconstruction. Do not replace a known decision that did not go as intended with a satisfactory example.
 
 Probe for the concrete sequence, consequence, frequency, workaround, and what changed afterward. Ask: “How important was that to you?” and “Did you want anything to be different?”
 
+If the participant reports no recent decision that did not go as intended, record that absence explicitly as disconfirming/no-problem evidence. Then, separately ask: “Tell me about a recent meal decision that was simply fine or satisfactory. What made it work?”
+
 **Disconfirming prompt:** “Are there times when meals are working well enough that there is no problem to solve? What makes those times work?”
 
-## 4. Current routine and alternatives (10–12 minutes)
+## 4. Current routine and alternatives (8–10 minutes)
 
 “Tell me about the ways you currently handle meals when you do not make something from scratch.”
 
@@ -76,7 +78,7 @@ Ask: “Which of these options works well enough for you now?” “What trade-o
 
 **Do not lead:** Do not contrast the participant's routine with an imagined ideal or presume that portions, repetition, grocery routines, or cooking alone are burdens.
 
-## 5. Previous attempts and family context (8–10 minutes)
+## 5. Previous attempts and family context (6–8 minutes)
 
 “Have you ever tried to change any part of your meal routine, or decided not to? Please tell me about one specific time.”
 
@@ -86,7 +88,7 @@ Then ask: “When family has been involved with meals or practical help, what ha
 
 Include the valid no-involvement case: “It is also fine if family is not involved. What is that arrangement like for you?”
 
-## 6. Privacy and sharing boundaries (5–7 minutes)
+## 6. Privacy and sharing boundaries (4–5 minutes)
 
 Use relationship situations, not a proposed solution: “When you make everyday meal choices, what—if anything—would you be comfortable telling family or another supporter?”
 
@@ -101,7 +103,7 @@ Check understanding in the participant's own words: “How would you describe th
 
 **Do not lead:** Do not suggest that family access, proof, updates, or oversight is normal or necessary.
 
-## 7. Disconfirmation, importance, and Close (5–7 minutes)
+## 7. Disconfirmation, importance, and Close (4–5 minutes)
 
 Ask all of the following even if earlier answers suggested difficulty:
 

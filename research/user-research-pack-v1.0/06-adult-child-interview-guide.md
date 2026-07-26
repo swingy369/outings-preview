@@ -10,7 +10,7 @@
 - Confirm the information sheet was provided and keep names, precise places, diagnoses, detailed health histories, and unrelated family information out of analytical notes.
 - Review only the participant's own screener context. Do not use or reveal content from an older adult's session, even if the pair may later be invited to a dyad.
 
-## 1. Consent and opening (5–7 minutes)
+## 1. Consent and opening (5–6 minutes)
 
 Use the researcher introduction and granular consent script in `04-consent-and-privacy.md`. Record each separate choice using `yes`, `no`, `withdrawn`, or `not_asked`; participation, recording, diary participation, quotations, and future contact are independent.
 
@@ -26,7 +26,7 @@ Rapport questions:
 
 **Do not lead:** Do not ask the participant to assess the older adult's capability, diagnose a cause, or prove that a concern is justified.
 
-## 2. Recent event that prompted concern — or Recent evidence of no concern (10–12 minutes)
+## 2. Recent event that prompted concern — or Recent evidence of no concern (9–11 minutes)
 
 “Please take me back to the last specific event about meals or food that made you concerned, if there was one. If not, tell me about a recent event that showed you things were fine or that it was not your concern.”
 
@@ -42,7 +42,7 @@ Ask two columns aloud and document them separately:
 
 **Do not lead:** Worry is not proof of a parent-owned problem. Record the adult child's account of the older adult as `third_party_inference` unless it is a direct description of the adult child's own behaviour.
 
-## 3. Current support, calls, visits, and alternatives (10–12 minutes)
+## 3. Current support, calls, visits, and alternatives (9–11 minutes)
 
 “What do you currently do, if anything, around meals or food?” Include calls, visits, shopping, ordering, cooking, sharing information, coordinating with others, and choosing not to get involved.
 
@@ -55,7 +55,7 @@ Explore:
 
 Ask: “What are you doing now that already works?” “What do you deliberately not do?” “What trade-offs do you make, if any?”
 
-## 4. Previous attempts and outcomes (8–10 minutes)
+## 4. Previous attempts and outcomes (7–9 minutes)
 
 “Tell me about a specific earlier time you tried something different, suggested help, or chose not to act.”
 
@@ -65,7 +65,7 @@ Then ask: “Has support ever caused tension or been rejected? What happened, an
 
 **Do not lead:** Do not describe acceptance of help as success or rejection as a mistake. Do not ask for private health details to explain an interaction.
 
-## 5. Information visibility and relationship boundaries (7–9 minutes)
+## 5. Information visibility and relationship boundaries (6–7 minutes)
 
 Use neutral relationship situations, not a proposed solution:
 
@@ -77,7 +77,7 @@ Use neutral relationship situations, not a proposed solution:
 
 Listen for useful support or reassurance that does not depend on ongoing access, tracking, proof, alerts, or continuous updates. Treat any wish for those things as evidence to record, not a request to solve.
 
-## 6. Disconfirmation and necessity check (5–7 minutes)
+## 6. Disconfirmation and necessity check (4–5 minutes)
 
 Ask all questions below, including when earlier concern sounded strong:
 
@@ -87,7 +87,7 @@ Ask all questions below, including when earlier concern sounded strong:
 4. “If your parent is satisfied with cooking less or using alternatives, what would you want to respect?”
 5. “What evidence would change your mind about whether there is a concern?”
 
-## 7. Close: value and continuation (4–6 minutes)
+## 7. Close: value and continuation (5–7 minutes)
 
 “Considering only the actions and workarounds you use today, which are worth continuing and which are not?”
 
