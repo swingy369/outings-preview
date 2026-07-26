@@ -52,7 +52,7 @@ This page is reusable. Write as little or as much as you want. It is fine to rec
 
 What meals, snacks, or drinks-with-a-meal do you want to note today? For each, how did you get it? (Examples: made it, used leftovers, bought groceries, ordered, picked up, restaurant, received from someone, community meal, or another way.)
 
-| Meal or moment (optional time) | What happened / how it was obtained | Who, if anyone, was involved? |
+| Meal or moment (optional time) | What happened / how it was obtained | Who, if anyone, was involved? Role only — no names or contact details. |
 | --- | --- | --- |
 | `________________________` | `______________________________________________` | `__________________` |
 | `________________________` | `______________________________________________` | `__________________` |
