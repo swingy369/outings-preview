@@ -54,7 +54,7 @@ Only **proceed** authorises an MVP PRD, and only for the segment, trigger, paren
 
 ### Narrow
 
-Select **narrow** when a meaningful problem is moderate or strong only in a smaller, evidence-defined segment, trigger, or job. Record what is supported, adjacent segments/triggers/jobs that are not, and additional evidence needed before any broader claim. A narrow decision does **not** authorise an MVP PRD unless the narrowed scope independently meets every Proceed condition.
+Select **narrow** when a meaningful problem is moderate or strong only in a smaller, evidence-defined segment, trigger, or job. Record what is supported, adjacent segments/triggers/jobs that are not, and additional evidence needed before any broader claim. A **Narrow** decision always blocks the MVP PRD. If the narrowed scope later independently satisfies every Proceed condition, formally reassess the decision record and change the final decision to **Proceed** before authorising a PRD.
 
 ### Reframe
 
