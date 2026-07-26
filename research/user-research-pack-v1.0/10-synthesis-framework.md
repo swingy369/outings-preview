@@ -6,7 +6,7 @@
 ## Non-negotiable traceability rules
 
 - Every synthesis claim, comparison, rating input, and problem-statement phrase must cite the relevant `evidence ID` values (for example, `EV-0142; EV-0171`). A claim without an evidence ID is a question or interpretation, not a finding.
-- Preserve the original `research_id`, `dyad_id`, `assumption_id`, `evidence_type`, `parent_owned`, and `segment_tags` when working from `evidence-matrix.csv`. Do not replace the matrix with an aggregated note.
+- Preserve the original `research_id`, `dyad_id`, `assumption_id`, `evidence_type`, `parent_owned`, and post-consent re-confirmed `segment_tags` when working from `evidence-matrix.csv`. Do not replace the matrix with an aggregated note.
 - Keep the direct material in `verbatim_or_observation` separate from `researcher_interpretation`. Do not upgrade an `attitude`, `third_party_inference`, or `researcher_interpretation` into reported or observed behaviour.
 - Use the allowed evidence categories exactly: `observed_behaviour`, `reported_behaviour`, `attitude`, `third_party_inference`, and `researcher_interpretation`. Recent first-person older-adult behaviour carries particular weight for parent-owned problem claims.
 - A paired account supplements, but never overwrites, either private individual account. Adult-child evidence about an older adult remains third-party inference unless the adult child describes their own action.
@@ -15,7 +15,7 @@
 ## 1. Prepare and clean the evidence
 
 1. Work only from de-identified records. Exclude withdrawn material and do not add names, contact details, precise addresses, diagnoses, or detailed health history to working files.
-2. Check each atomic row has a unique `evidence ID`, valid `WA-###` research ID, applicable `DY-###` or `not applicable`, valid assumption ID, allowed evidence type, parent-owned status, recency, segment tags, and source-note reference. Flag missing or ambiguous fields; do not silently complete them from memory.
+2. Check each atomic row has a unique `evidence ID`, valid `WA-###` research ID, applicable `DY-###` or `not applicable`, valid assumption ID, allowed evidence type, parent-owned status, recency, post-consent re-confirmed segment tags, and source-note reference. Flag missing or ambiguous fields; do not silently complete them from memory or screening records.
 3. Check atomicity. Split a row only when source notes support distinct observations/actions; retain the original source location and link resulting rows. Do not merge different participants, events, assumptions, or contradictory accounts.
 4. De-duplicate only exact accidental imports. Retain repeated accounts as separate evidence and record their independent `research_id` values. Do not count multiple rows from one event as independent recurrence.
 5. Re-read `alternative_explanation` and `contradictory_evidence` for every row used in a claim. Create a follow-up question or an explicit limitation when they leave material ambiguity.
@@ -51,7 +51,7 @@ Create one record per `WA-###` before comparing participants. This protects chro
 
 | Field | Record with evidence IDs |
 | --- | --- |
-| Participant and context | `WA-###`; role; relevant segment tags; session/diary sources; limitations |
+| Participant and context | `WA-###`; role; relevant post-consent re-confirmed segment tags from the matrix; session/diary sources; limitations |
 | Recent meal events | Event, recency, trigger, behaviour, consequence, and `evidence ID` |
 | Parent-owned desired outcome or no-change account | Older-adult wording/behaviour; ownership status; `evidence ID` |
 | Current behaviour and alternatives | What happens now; alternatives used/considered; trade-offs; `evidence ID` |
@@ -79,7 +79,7 @@ Do not infer agreement from silence or make private evidence visible in the pair
 
 ### Segment comparison
 
-Use recruitment segment tags exactly as recorded (for example, living arrangement, cooking frequency, desired cooking change, smartphone confidence, family distance/contact, help history, cultural meal context, and current alternatives). Define a segment only if observable in the matrix and distinguishable from an adjacent contrast; do not create an identity-based segment from assumptions.
+Use only post-consent re-confirmed segment tags recorded in the debrief and `evidence-matrix.csv` (for example, living arrangement, cooking frequency, desired cooking change, smartphone confidence, family distance/contact, help history, cultural meal context, and current alternatives). Screening, tracker, and sampling-gap worksheet values remain operational and are not analytical evidence; never copy or complete matrix tags from those records. Define a segment only if observable in the matrix and distinguishable from an adjacent contrast; do not create an identity-based segment from assumptions.
 
 | Segment tag / contrast | Participants and evidence IDs | Recurring trigger and consequence | Parent-owned job | Current alternatives and gap | Important exceptions / negative cases | Evidence gap |
 | --- | --- | --- | --- | --- | --- | --- |

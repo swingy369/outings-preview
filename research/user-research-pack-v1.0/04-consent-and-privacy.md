@@ -81,11 +81,14 @@ Do not use the paired session to resolve a disagreement or pressure either perso
 
 ## Withdrawal and deletion workflow
 
-1. Receive the request, confirm the person’s research ID where possible, and record the request date and `withdrawn` consent state in the relevant tracker fields. Do not record the reason unless the person freely gives a minimal operational reason and it is needed to process the request.
+`withdrawal_status` is an operational workflow field, not a consent field. Its only allowed values are `not_withdrawn`, `withdrawal_requested`, `withdrawal_completed`, and `withdrawal_completed_with_limitations`. Consent fields continue to use only `yes`, `no`, `withdrawn`, and `not_asked`; never put a withdrawal-status value in a consent field.
+
+1. Receive the request and confirm the person’s research ID where possible. Immediately change `withdrawal_status` from `not_withdrawn` to `withdrawal_requested`, record the request date in the operational withdrawal log, and set `participation_consent` to `withdrawn`. Set any other previously granted permission that the person withdraws to the consent-state value `withdrawn`. Do not record the reason unless the person freely gives a minimal operational reason and it is needed to process the request.
 2. Locate only study materials linked to that research ID: notes, diary entries, recordings, quotation selections, and the separately stored contact record where applicable. Keep the contact record separate from analytical files throughout.
 3. Stop any future contact or further data collection under that ID immediately. Remove the person from unsent invitations and scheduled sessions.
-4. Delete or securely destroy material that can still be linked to that research ID, including separately held contact details unless a different approved retention duty applies. Record that the action was completed in the operational withdrawal log, keyed by research ID.
-5. Explain the limitation: material already de-identified so it cannot reasonably be linked to the ID, or already included in aggregate reporting, may not be removable. Do not make a promise to delete material that cannot be identified.
+4. Delete or securely destroy material that can still be linked to that research ID, including separately held contact details unless a different approved retention duty applies. Record each action in the operational withdrawal log, keyed by research ID.
+5. Complete the exact status transition: change `withdrawal_requested` to `withdrawal_completed` when all linkable material in scope has been handled, or to `withdrawal_completed_with_limitations` when material already de-identified beyond reasonable linkage or included in aggregate reporting cannot be removed. Do not leave a processed request at `withdrawal_requested`.
+6. Explain any limitation to the participant. Do not promise to delete material that cannot be identified or removed.
 
 ## Sensitive-disclosure and incident safeguards
 
@@ -99,6 +102,7 @@ If an urgent safety concern arises, pause the research. The next steps must use 
 - [ ] Participant information sheet was provided or read aloud before consent.
 - [ ] Research ID is assigned and direct contact details are held separately.
 - [ ] Each applicable consent choice was asked independently and recorded with the canonical consent-state label.
+- [ ] `withdrawal_status` uses only its separate allowed values, and any request followed the exact transition from `not_withdrawn` to `withdrawal_requested` to the applicable completed value.
 - [ ] A declined recording or future-contact choice has not been treated as a refusal of core interview participation.
 - [ ] For a dyad, both individual interviews were completed before the paired session and the paired-session reminder was read.
 - [ ] Any withdrawal, sensitive disclosure, or paused research activity has been handled under the workflow above and the separately approved policy where required.

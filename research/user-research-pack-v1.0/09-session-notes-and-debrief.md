@@ -8,6 +8,7 @@
 - Complete the debrief on the same day, before the next session where practical. Record only `WA-###` research IDs and, where applicable, the separately assigned `DY-###` dyad ID. Keep names, contact details, precise addresses, diagnoses, detailed health histories, and unrelated personal details out of this document and the evidence matrix.
 - Use one template per individual, paired, or diary-review session. For a paired session, retain each person's research ID and the dyad ID, and do not overwrite or disclose either person's private individual-interview account.
 - Use only the canonical consent-state labels: `yes`, `no`, `withdrawn`, and `not_asked`. Do not treat attendance, a completed diary, silence, or a recording as consent.
+- Screening answers, tracker fields, and sampling-gap tags remain operational and are not analytical evidence. Only after `participation_consent=yes`, re-confirm the minimum segment tags needed for analysis; transfer only those re-confirmed tags into this debrief and `evidence-matrix.csv`.
 - Preserve satisfactory routines, successful alternatives, rejected help, uncertainty, and contradictions. Do not frame lower cooking, a missed entry, or no change wanted as a deficit.
 - An exact quotation is evidence only of what was said in that session. Remove direct identifying detail before transferring it to the analytical evidence matrix, and use quotations only if the applicable quotation preference permits their later use.
 
@@ -33,14 +34,16 @@
 
 **Proceeding check:** If `participation_consent` is not `yes`, do not retain research content. If recording consent is `no`, continue only with notes. Before using a paired-session template, confirm both individual interviews occurred, both people separately agreed to the paired discussion, and the paired-session safeguard was read.
 
-## 2. Concise participant and session context
+## 2. Post-consent tag re-confirmation and concise participant context
 
-Record only broad, research-relevant context already consented and needed to interpret the session. Do not infer identity labels or add details from a separate contact record.
+Only after the proceeding check passes, tell the participant: “During screening, we recorded a few broad details to check eligibility and plan a varied sample. May I re-confirm only the broad details needed to compare this conversation with others? You may correct them or decline any item.” Re-confirm only applicable broad tags such as living arrangement, cooking-frequency band, desired cooking change, smartphone-confidence band, family distance/contact bands, help-history categories, broad current-alternative categories, and the optional cultural meal-context code. Do not read or seek names, contact details, precise location, identity labels, medical details, or another person's screening answers.
+
+Record only tags the participant re-confirms after consent. A corrected tag replaces the proposed tag in this debrief; a declined, skipped, or unconfirmed screening tag stays operational and must not enter analysis. Tag re-confirmation does not turn the screening answer into evidence: analytical claims still require session or diary evidence and an evidence ID.
 
 | Context field | Concise, de-identified note |
 | --- | --- |
 | Participant role | `older adult / adult child / other supporter exploratory / paired` |
-| Relevant segment tags | `e.g., living_alone; occasional_cook; low_smartphone_confidence` |
+| Post-consent re-confirmed segment tags | `e.g., living_alone; occasional_cook; low_smartphone_confidence` |
 | Session focus or event discussed | `____________________________________________` |
 | Any access, pause, skip, or format limitation | `____________________________________________` |
 | Typical, unusual, or unknown context | `____________________________________________` |
@@ -128,9 +131,9 @@ Record only assumptions meaningfully touched in the session; leave others blank.
 
 `parent_owned=yes` only when the older adult expresses or demonstrates the relevant outcome as their own. Adult-child concern alone never establishes parent ownership.
 
-## 7. Segment tags and questions for later sessions
+## 7. Re-confirmed segment tags and questions for later sessions
 
-**Segment tags to transfer exactly as a semicolon-separated field:**
+**Post-consent re-confirmed segment tags to transfer exactly as a semicolon-separated field (never copy unconfirmed screening tags):**
 
 `______________________________________________________________________________`
 
@@ -166,7 +169,7 @@ Allowed values are:
 - `source_strength` and `confidence`: `low`, `medium`, `high`
 - `parent_owned`: `yes`, `no`, `unclear`
 
-Use a concrete `recency` where stated (for example, `yesterday` or `past 7 days`), otherwise `not stated`. In `alternative_explanation` write a plausible non-hypothesis explanation. In `contradictory_evidence`, record conflicting material or `none identified in this item` only where that is true. `source_note_location` must point to this de-identified note, not a contact record.
+Use a concrete `recency` where stated (for example, `yesterday` or `past 7 days`), otherwise `not stated`. In `alternative_explanation` write a plausible non-hypothesis explanation. In `contradictory_evidence`, record conflicting material or `none identified in this item` only where that is true. Populate `segment_tags` only from the post-consent re-confirmed field above. `source_note_location` must point to this de-identified note, not a contact record.
 
 | evidence_id | research_id | dyad_id | session_type | session_date | assumption_id | evidence_type | recency | verbatim_or_observation | researcher_interpretation | alternative_explanation | contradictory_evidence | source_strength | parent_owned | segment_tags | confidence | source_note_location |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

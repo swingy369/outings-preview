@@ -25,11 +25,13 @@ Include an older adult who:
 
 Include an adult (18 or older) who:
 
-- lives in Toronto/GTA **or** has an independently living older-adult family member in Toronto/GTA;
+- is an adult child or other family supporter of an older adult who lives independently in Toronto/GTA;
 - is an adult child or another family supporter who has some awareness of, contact about, or a clear lack of involvement in that older adult's everyday meal decisions; and
 - can provide their own informed consent and take part in an English conversation.
 
-The core target is **15 adult-child individual interviews**. Only a participant who identifies as the older adult's adult child counts toward that 15-person target. An adult child need not think there is a problem, be enthusiastic about support, or be paired with a participating older adult.
+The core target is **15 in-scope adult-child individual interviews**. Only a participant who identifies as the adult child of an independently living older adult in Toronto/GTA counts toward that 15-person target. An adult child may live outside Toronto/GTA and need not think there is a problem, be enthusiastic about support, or be paired with a participating older adult.
+
+A clear “no” to either the older adult's independent-living status or Toronto/GTA location is out of scope for this study and excludes the person from both the core adult-child sample and exploratory supporter interviews. An “unclear” answer remains an operational screening case only: hold it out of quota and do not schedule or count an interview until both points are minimally confirmed. Use only the high-level checks in `03-screeners-and-outreach.md`; do not seek medical details, a precise address, or an explanation for uncertainty. This rule preserves the hard target of 15 in-scope adult children.
 
 Other family supporters may be recruited only as exploratory, out-of-quota contrast cases. Record them separately from adult children and do **not** count them toward the 15 adult-child interviews, the core sample balance, or a claim that the adult-child target has been met. Uninvolved, sceptical, and satisfied adult children remain important core contrasts; exploratory supporters do not replace them.
 
@@ -107,7 +109,7 @@ Keep a de-identified sampling-gap worksheet beside the tracker. This worksheet d
 | `cultural_meal_context_code` | `self_described_food_tradition`, `religious_or_observance`, `household_preference_or_restriction`, `none_named`, `prefer_not_to_say`, or `not_asked`. |
 | `cultural_context_short_note` | Optional, non-identifying broad meal-context wording volunteered by the participant; never record ethnicity, religion, address, or a detailed personal history. |
 
-Use the optional cultural meal-context screener question in `03-screeners-and-outreach.md` to populate this worksheet. The worksheet is a sampling tool, not analytical evidence and not a substitute for participant consent.
+Use the optional cultural meal-context screener question in `03-screeners-and-outreach.md` to populate this worksheet. The worksheet and all screening segment values are operational sampling tools, not analytical evidence and not a substitute for participant consent. Keep them operational until, after participation consent, the participant re-confirms the minimum tags needed for analysis under `09-session-notes-and-debrief.md`; only those re-confirmed tags may enter the debrief and evidence matrix.
 
 Review the tracker after approximately **ten** and **twenty** completed individual interviews. At each review:
 
