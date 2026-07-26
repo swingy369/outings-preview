@@ -32,9 +32,9 @@ Your research ID is not the same as being anonymous: it links your study materia
 
 ### How long will information be kept, and what happens to it?
 
-**OPERATIONAL FIELD — COMPLETE BEFORE RECRUITMENT:** Research materials will be retained for `[insert approved retention period]` after the study closes, then deleted or securely destroyed according to `[insert approved deletion method and schedule]`.
+**OPERATIONAL FIELD — COMPLETE BEFORE RECRUITMENT:** Research materials will be retained for `[insert approved retention period]` after the study closes, then securely deleted or destroyed under the approved data-handling process.
 
-**OPERATIONAL FIELD — COMPLETE BEFORE RECRUITMENT:** Separately stored contact records will be retained for `[insert approved contact-record retention period]`, or until they are no longer needed for the consented purpose, then deleted or securely destroyed according to `[insert approved deletion method and schedule]`.
+**OPERATIONAL FIELD — COMPLETE BEFORE RECRUITMENT:** Separately stored contact records will be retained for `[insert approved contact-record retention period]`, or until they are no longer needed for the consented purpose, then securely deleted or destroyed under the approved data-handling process.
 
 If you withdraw before your material is de-identified or included in aggregate reporting, we will follow the withdrawal and deletion process below. Once material has been de-identified so that it cannot reasonably be linked back to your research ID, or has been combined into aggregate reporting, it may no longer be possible to find and remove it.
 
