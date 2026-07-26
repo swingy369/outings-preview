@@ -4,7 +4,7 @@
 
 ## Researcher instructions: minimum necessary data
 
-Use these questions only to decide eligibility, fill purposeful sampling gaps, and schedule a session. Record only the corresponding eligibility and segmentation values in the participant tracker; place names, email addresses, telephone numbers, and scheduling details in the separate contact record. Do not ask for medical labels, medication, detailed health history, income, immigration status, or a reason someone does not cook.
+Use these questions only to decide eligibility, fill purposeful sampling gaps, and schedule a session. Record only the corresponding eligibility and segmentation values in the participant tracker; place names, email addresses, telephone numbers, and scheduling details in the separate contact record. Use the separate sampling-gap worksheet defined in `02-recruitment-and-segmentation.md` for `participant_type_detail` and the optional `cultural_meal_context_code`; do not change the tracker header. Do not ask for medical labels, medication, detailed health history, income, immigration status, or a reason someone does not cook.
 
 Read the study description before screening: “We are doing research about everyday meal decisions and family support. We are interested in a range of experiences, including people who are satisfied with their routines and people who would like something to be different. This is a research conversation, not a service.” A person may skip any screening question or stop at any time.
 
@@ -32,28 +32,34 @@ Use for a direct older-adult invite or a person referred to the study. If the pe
    - Record `smartphone_confidence`.
 9. **Family connection.** “Is there an adult child or other family supporter you are in touch with about everyday life? You do not need to name anyone.” If yes: “Are they in your household, nearby, farther away, or would you rather not say?” and “How often are you usually in contact?”
    - Record `family_distance_band` and `family_contact_frequency`; a “no family involvement” response is valid.
-10. **History of help.** “Has anyone offered or provided help related to meals or food choices? If so, did that feel welcome, not taken up, unwanted, mixed, or is there no relevant experience?”
-    - Record `help_history`. Do not ask who offered it unless the participant independently offers only the broad relationship needed for a dyad check.
-11. **Interview availability.** “Would you be open to a 45–60 minute research conversation at a time and format we agree on?”
+10. **Family-involvement intensity.** “How involved, if at all, is family in your everyday meal decisions: not involved; occasional conversations or help; frequent practical help; or another description?”
+    - Record the first component of `help_history` as exactly one of `intensity=none`, `intensity=occasional`, `intensity=frequent`, or `intensity=unknown` when skipped or unclear.
+11. **Response to help.** “When meal-related help has been offered or provided, did it feel welcomed, not taken up, unwanted, mixed, or has it not been offered?”
+    - Record the second component of `help_history` as exactly one of `response=welcomed`, `response=not_taken_up`, `response=rejected`, `response=mixed`, `response=not_offered`, or `response=unknown`. Store the field as `intensity=<value>; response=<value>`. Do not ask who offered help unless the participant independently offers only the broad relationship needed for a dyad check.
+12. **Cultural meal context (optional).** “Are there any food traditions, faith practices, household preferences, or other meal routines you would like us to take into account when we plan the conversation? You may say no, prefer not to say, or describe only what feels comfortable.”
+    - Record only the optional `cultural_meal_context_code` in the separate sampling-gap worksheet: `self_described_food_tradition`, `religious_or_observance`, `household_preference_or_restriction`, `none_named`, `prefer_not_to_say`, or `not_asked`. A short, non-identifying meal-context note is optional; do not ask for identity details.
+13. **Interview availability.** “Would you be open to a 45–60 minute research conversation at a time and format we agree on?”
     - Record individual-interview eligibility and availability in the separate contact record. Explain that participation, recording, diary, quotations, and future contact are separate choices later.
 
 ## Adult-child screener
 
-Use for adult children and other adult family supporters. Their account does not establish an older adult's needs; it supplies a separate perspective and may be a useful contrast even when they report little involvement.
+Use primarily for adult children. Their account does not establish an older adult's needs; it supplies a separate perspective and may be a useful contrast even when they report little involvement. Other family supporters may be screened only as exploratory/out-of-quota cases and must be identified separately; they do not count toward the hard 15-person adult-child target.
 
-1. **Age and connection.** “Are you 18 or older, and are you an adult child or other family supporter of an older adult who lives independently in Toronto or the Greater Toronto Area?”
-   - Include people who live outside GTA if the older adult meets the GTA location criterion. Do not record the older adult's name or address.
+1. **Age and relationship classification.** “Are you 18 or older, and are you the adult child of an older adult who lives independently in Toronto or the Greater Toronto Area? If not, are you another family supporter?”
+   - Include people who live outside GTA if the older adult meets the GTA location criterion. Record `participant_type_detail=adult_child_core` only for an adult child; record any other supporter as `participant_type_detail=other_supporter_exploratory` in the separate sampling-gap worksheet. Only `adult_child_core` counts toward the 15 adult-child target. Do not record the older adult's name or address.
 2. **Independent-living and first-study scope.** “To your knowledge, does the older adult make their own choice about taking part and live without continuous supervision?”
    - If no or unclear, do not recruit them as a dyad through this study. The adult child may still be eligible for an individual interview if their own experience fits the study; do not request medical detail.
 3. **Contact and distance.** “How often are you generally in contact, if at all?” and “Are you in the same household, nearby, farther away, or would you rather not say?”
    - Record `family_contact_frequency` and `family_distance_band` for the adult-child participant's relationship context.
-4. **Involvement intensity.** “How involved are you in everyday meal decisions: not involved; occasionally talk about them; sometimes help practically; often help practically; or another description?”
-   - Record this within `help_history` using the participant's words where possible.
+4. **Involvement intensity.** “How involved are you in everyday meal decisions: not involved; occasional conversations or help; frequent practical help; or another description?”
+   - Record the first component of `help_history` as exactly one of `intensity=none`, `intensity=occasional`, `intensity=frequent`, or `intensity=unknown` when skipped or unclear.
 5. **Current alternatives.** “As far as you know, what options are currently used for meals: cooking, ready-made or delivered meals, eating out, family help, community options, or something else? It is also fine to say you do not know.”
    - Record broad `current_food_alternatives` categories and “do not know” when applicable.
-6. **History of help.** “Have you offered or provided meal-related help? If yes, was it welcomed, not taken up, unwanted, mixed, or are you not sure?”
-   - Record `help_history`; do not ask the person to evaluate the older adult's health or capability.
-7. **Preference and availability.** “Would you be open to a 45–60 minute research conversation about your own experiences of everyday meal decisions and family support?”
+6. **Response to help.** “When meal-related help has been offered or provided, was it welcomed, not taken up, unwanted, mixed, not offered, or are you not sure?”
+   - Record the second component of `help_history` as exactly one of `response=welcomed`, `response=not_taken_up`, `response=rejected`, `response=mixed`, `response=not_offered`, or `response=unknown`. Store the field as `intensity=<value>; response=<value>`; do not ask the person to evaluate the older adult's health or capability.
+7. **Cultural meal context (optional).** “Are there any food traditions, faith practices, household preferences, or other meal routines you would like us to take into account when we plan the conversation? You may say no, prefer not to say, or describe only what feels comfortable.”
+   - Record only the optional `cultural_meal_context_code` in the separate sampling-gap worksheet using the allowed values above. A short, non-identifying meal-context note is optional; do not ask for identity details.
+8. **Preference and availability.** “Would you be open to a 45–60 minute research conversation about your own experiences of everyday meal decisions and family support?”
    - Record individual-interview eligibility and scheduling availability separately. Do not ask whether they want an offering or assume there is a problem.
 
 ## Dyad follow-up eligibility check
@@ -87,8 +93,8 @@ Select from eligible people to fill the most important contrast gap, not from th
 | Priority | Selection rule | Assumptions informed |
 | --- | --- | --- |
 | 1 | Protect the target: recruit independently living older adults directly and keep at least eight independently recruited older adults in the 15-person older-adult sample. | `P1`, `P2`, `U1` |
-| 2 | Fill the least-covered tracker contrast: living arrangement, cooking frequency, desire to cook more (including satisfied), age band, smartphone confidence, family distance/contact, help history, or current alternatives. | `U1`, `W1`, `T1` |
-| 3 | Prioritise a disconfirming case: satisfied non-cook, successful alternative, no family involvement, ignored or rejected help, or adult child who reports no concern or no involvement. | `P1`, `P2`, `B1`, `R1`, `R2` |
+| 2 | Fill the least-covered tracker or sampling-gap worksheet contrast: living arrangement, cooking frequency, desire to cook more (including satisfied), age band, smartphone confidence, family distance/contact, `cultural_meal_context_code`, `help_history` `intensity`, `help_history` `response`, or current alternatives. | `U1`, `W1`, `T1` |
+| 3 | Prioritise a disconfirming case: satisfied non-cook, successful alternative, `intensity=none`, `response=not_taken_up`, `response=rejected`, or an adult child who reports no concern or no involvement. | `P1`, `P2`, `B1`, `R1`, `R2` |
 | 4 | Build five voluntary dyads only after each person independently qualifies and completes an individual interview; preserve individual privacy and disagreement. | `R1`, `R2`, `C1` |
 | 5 | Invite diary participants across contrasting routines, including people for whom nothing needs to change and people using alternatives that work. | `P1`, `P2`, `B1`, `W1` |
 

@@ -21,7 +21,7 @@ Include an older adult who:
 - can provide their own informed consent and take part in an English conversation; and
 - is willing to discuss ordinary meal choices, including a response that their current routine is satisfactory.
 
-### Adult-child or family-supporter individual interview
+### Adult-child individual interview (core target) and other family supporters (exploratory)
 
 Include an adult (18 or older) who:
 
@@ -29,7 +29,9 @@ Include an adult (18 or older) who:
 - is an adult child or another family supporter who has some awareness of, contact about, or a clear lack of involvement in that older adult's everyday meal decisions; and
 - can provide their own informed consent and take part in an English conversation.
 
-The adult child need not think there is a problem, be enthusiastic about support, or be paired with a participating older adult. Recruit uninvolved, sceptical, and satisfied family supporters as useful contrasts.
+The core target is **15 adult-child individual interviews**. Only a participant who identifies as the older adult's adult child counts toward that 15-person target. An adult child need not think there is a problem, be enthusiastic about support, or be paired with a participating older adult.
+
+Other family supporters may be recruited only as exploratory, out-of-quota contrast cases. Record them separately from adult children and do **not** count them toward the 15 adult-child interviews, the core sample balance, or a claim that the adult-child target has been met. Uninvolved, sceptical, and satisfied adult children remain important core contrasts; exploratory supporters do not replace them.
 
 ### First-study exclusions
 
@@ -46,7 +48,7 @@ A person may decline to answer a screening question. Do not infer an exclusion f
 
 ## Purposeful sample and soft quotas
 
-Recruit toward the README targets: 15 older-adult individual interviews, 15 adult-child individual interviews, five paired family interviews, and at least five seven-day diaries. Each paired interview is a follow-up, not a substitute for either individual interview.
+Recruit toward the README targets: 15 older-adult individual interviews, **15 adult-child individual interviews**, five paired family interviews, and at least five seven-day diaries. Other family supporters are exploratory/out-of-quota only and do not count toward the 15 adult-child target. Each paired interview is a follow-up, not a substitute for either individual interview.
 
 At least **eight independently recruited older adults** are required. Mark `recruited_independently` in the tracker for an older adult contacted through a channel not initiated by a participating adult child. This meets the README requirement that at least half of the 15 older-adult participants come through channels other than a participating adult child.
 
@@ -62,10 +64,10 @@ Use the following as soft quotas. They are prompts for contrast, not exclusion r
 | Age band | Coverage across 65–74, 75–84, and 85+ where feasible | Avoids treating older adults as one segment. |
 | Smartphone confidence | Low, mixed, and high confidence | Tests whether digital confidence is relevant without making it a requirement. |
 | Family distance and contact | Same household/nearby, farther away, and low/high contact | Creates contrast for `R1`, `R2`, `T1`, and `C1`. |
-| Family-involvement intensity | Little or none, occasional check-ins, and frequent practical involvement | Includes both invited and limited family roles. |
+| Family-involvement intensity | `help_history` values with `intensity=none`, `intensity=occasional`, and `intensity=frequent` (`intensity=unknown` when skipped or unclear) | Includes both invited and limited family roles without conflating them with the response to help. |
 | Cultural meal context | Self-described cultural, religious, household, and food-preference contexts; include more than one context where recruitment permits | Looks for context-specific routines without assigning identity labels. |
 | Current food alternatives | Home cooking, ready-made or delivered meals, restaurants/takeout, family help, community meals, grocery convenience options, and mixed routines | Tests `B1` against viable alternatives. |
-| Prior help response | Help welcomed, ignored/not taken up, actively rejected, and no help offered | Seeks possible disconfirmation of `R1` and `R2`. |
+| Prior help response | `help_history` values with `response=welcomed`, `response=not_taken_up`, `response=rejected`, `response=mixed`, and `response=not_offered` | Seeks possible disconfirmation of `R1` and `R2` separately from involvement intensity. |
 
 Deliberately include all of the following, even when they express little interest in change:
 
@@ -94,14 +96,28 @@ Founder, investor, staff, friend, and family networks may distribute the same pu
 
 Before each invitation, assign the person a provisional `WA-###` ID only after they agree to be screened. Keep direct contact details in the separate contact record specified by `contact_record_location`; keep only eligibility and segmentation values in the tracker.
 
+### Sampling-gap worksheet (separate structured record)
+
+Keep a de-identified sampling-gap worksheet beside the tracker. This worksheet does not replace or modify the exact `participant-tracker.csv` header. It records only the fields needed to monitor contrasts that the tracker cannot represent as a distinct field:
+
+| Worksheet field | Allowed value or recording rule |
+| --- | --- |
+| `research_id` | `WA-###` only; no name or contact detail. |
+| `participant_type_detail` | `older_adult`, `adult_child_core`, or `other_supporter_exploratory`. Count only `adult_child_core` toward the 15 adult-child target. |
+| `cultural_meal_context_code` | `self_described_food_tradition`, `religious_or_observance`, `household_preference_or_restriction`, `none_named`, `prefer_not_to_say`, or `not_asked`. |
+| `cultural_context_short_note` | Optional, non-identifying broad meal-context wording volunteered by the participant; never record ethnicity, religion, address, or a detailed personal history. |
+
+Use the optional cultural meal-context screener question in `03-screeners-and-outreach.md` to populate this worksheet. The worksheet is a sampling tool, not analytical evidence and not a substitute for participant consent.
+
 Review the tracker after approximately **ten** and **twenty** completed individual interviews. At each review:
 
-1. Count older-adult and adult-child interviews separately; do not count a paired session as an individual interview.
+1. Count older-adult interviews, `adult_child_core` interviews, and `other_supporter_exploratory` interviews separately; do not count a paired session as an individual interview. Only `adult_child_core` interviews count toward the hard 15-person adult-child target.
 2. Check that eight or more older adults are on track to be independently recruited and that five potential dyads can complete both individual sessions first.
-3. Mark overrepresented and missing values in every tracker contrast field: `living_arrangement`, `cooking_frequency_band`, `wants_to_cook_more`, `age_band`, `smartphone_confidence`, `family_distance_band`, `family_contact_frequency`, `help_history`, and `current_food_alternatives`.
-4. Check for the deliberate disconfirming cases: satisfied non-cooks, successful alternatives, and rejected family assistance.
-5. Compare recruitment coverage with the assumptions map. For example, missing successful alternatives is a `B1` gap; missing independent older-adult voices is a `P1`, `P2`, and `U1` gap; missing rejected help is an `R1` and `R2` gap.
-6. Change channels or invitation distribution to fill the largest gap; do not change questions or relax exclusions to pursue a preferred conclusion.
+3. Mark overrepresented and missing values in every tracker contrast field: `living_arrangement`, `cooking_frequency_band`, `wants_to_cook_more`, `age_band`, `smartphone_confidence`, `family_distance_band`, `family_contact_frequency`, `current_food_alternatives`, and both components of `help_history`: `intensity` and `response`.
+4. Review the sampling-gap worksheet's `cultural_meal_context_code` field as its own contrast. Adjust distribution channels if a relevant self-described meal context is missing, while retaining `none_named`, `prefer_not_to_say`, and `not_asked` as valid non-problem responses.
+5. Check for the deliberate disconfirming cases: satisfied non-cooks, successful alternatives, and `response=rejected` family assistance.
+6. Compare recruitment coverage with the assumptions map. For example, missing successful alternatives is a `B1` gap; missing independent older-adult voices is a `P1`, `P2`, and `U1` gap; missing rejected help is an `R1` and `R2` gap.
+7. Change channels or invitation distribution to fill the largest gap; do not change questions or relax exclusions to pursue a preferred conclusion.
 
 Record the rationale for any recruitment adjustment in the fieldwork log, not in the analytical tracker. Do not claim that the resulting sample represents the Toronto/GTA older-adult population.
 
