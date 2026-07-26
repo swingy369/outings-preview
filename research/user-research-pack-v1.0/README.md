@@ -7,6 +7,15 @@
 **Market:** Toronto and the Greater Toronto Area
 **Language:** English
 
+## Validation status
+
+- File inventory complete.
+- Placeholder scan passed.
+- Terminology consistency checked.
+- Scope and language review passed.
+- Founder workflow dry run passed.
+- Consent language still requires appropriate legal review before operational use.
+
 ## Purpose and required research outputs
 
 Use this pack to decide whether a meals-first, non-clinical Weare MVP PRD is justified. The study investigates independently living older adults' meal routines and the role that adult children or other family supporters may play. It tests a problem before proposing a solution.
