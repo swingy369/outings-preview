@@ -1,0 +1,2 @@
+evidence_id,research_id,dyad_id,session_type,session_date,assumption_id,evidence_type,recency,verbatim_or_observation,researcher_interpretation,alternative_explanation,contradictory_evidence,source_strength,parent_owned,segment_tags,confidence,source_note_location
+EV-0000,WA-000,EXAMPLE-ONLY,older_adult_individual,YYYY-MM-DD,P1,reported_behaviour,not stated,EXAMPLE ONLY — delete before fieldwork,Example format only; not collected evidence,Not applicable,Not applicable,low,unclear,example_only,low,EXAMPLE ONLY — delete before fieldwork
