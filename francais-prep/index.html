@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Français Prep</title>
+<style>
+:root{--bg:#fff;--side:#f7f7f6;--line:#ebebea;--ink:#1f1f1e;--mute:#8a8a87;--hl:#ececea;--blue:#2f7cf6;--purple:#7c5cf0;--red:#ef6a57;--green:#2fb67c;--orange:#f5a524;--r:10px}
+@media(prefers-color-scheme:dark){:root{--bg:#191919;--side:#202020;--line:#2e2e2d;--ink:#ececea;--mute:#8f8f8b;--hl:#2b2b2a}}
+*{box-sizing:border-box}body{margin:0;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;background:var(--bg);color:var(--ink);display:flex;min-height:100vh}
+a{color:var(--blue)}button{font:inherit;cursor:pointer;color:inherit}
+aside{width:250px;background:var(--side);border-right:1px solid var(--line);padding:12px;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;flex-shrink:0;overflow:auto}
+.brand{display:flex;align-items:center;gap:8px;font-weight:600;padding:6px 8px;margin-bottom:8px}
+.logo{width:18px;height:18px;border-radius:5px;background:var(--purple)}
+.qa{border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--mute);margin-bottom:12px;background:var(--bg)}
+.nav a,.nav .sub{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:7px;color:var(--ink);text-decoration:none;cursor:pointer}
+.nav a:hover{background:var(--hl)}.nav a.on{background:var(--hl)}
+.sec{font-size:12px;color:var(--mute);margin:18px 10px 6px}
+.dot{width:16px;height:16px;border-radius:5px;flex-shrink:0}
+.side-foot{margin-top:auto;padding-top:12px}
+.gs{border:1px solid var(--line);border-radius:8px;padding:7px 10px;display:flex;justify-content:space-between;color:var(--ink);background:var(--bg);margin-bottom:12px;cursor:pointer}
+.plan{display:flex;align-items:center;justify-content:space-between;color:var(--mute)}
+.btn{background:#111;color:#fff;border:0;border-radius:8px;padding:6px 14px;font-weight:500}
+@media(prefers-color-scheme:dark){.btn{background:#ececea;color:#111}}
+.btn.ghost{background:var(--bg);color:var(--ink);border:1px solid var(--line)}
+.btn.sm{padding:4px 10px;font-size:13px}
+main{flex:1;min-width:0;padding:32px 24px 60px}
+.wrap{max-width:1170px;margin:0 auto}
+.crumb{color:var(--mute);font-size:13px;margin-bottom:22px}
+.icon{width:26px;height:26px;border-radius:7px;display:inline-block;margin-bottom:14px}
+h1{font-size:22px;margin:0 0 4px;font-weight:600}.sub2{color:var(--mute);margin:0 0 20px}
+.banner{height:86px;border-radius:12px;background:linear-gradient(120deg,#dcd3f7,#f7d9d3 55%,#d3e6f7);display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+.pill{background:var(--bg);border-radius:999px;padding:6px 14px;display:inline-flex;gap:8px;align-items:center;box-shadow:0 1px 4px #0002;cursor:pointer;color:var(--ink);text-decoration:none}
+.pill b{background:#e4efff;color:var(--blue);padding:1px 8px;border-radius:99px;font-weight:500}
+.grid{display:grid;grid-template-columns:1fr 310px;gap:26px}
+@media(max-width:1000px){.grid{grid-template-columns:1fr}aside{display:none}}
+.card{border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:20px;background:var(--bg)}
+.card h3{margin:0;font-size:15px;font-weight:600}.mute{color:var(--mute)}.row{display:flex;justify-content:space-between;align-items:center}
+.bar{height:4px;background:var(--hl);border-radius:4px;margin:12px 0;overflow:hidden}.bar i{display:block;height:100%;background:var(--blue)}
+.task{display:flex;align-items:center;gap:10px;padding:11px 12px;border:1px solid var(--line);border-bottom:0;cursor:pointer}
+.tasks{border-bottom:1px solid var(--line);border-radius:8px;overflow:hidden;margin:12px 0}.tasks .task:last-child{border-bottom:0}
+.task:hover{background:var(--side)}.task .m{margin-left:auto;color:var(--mute)}
+.chk{width:15px;height:15px;border:1.5px solid var(--mute);border-radius:50%;flex-shrink:0}.chk.on{background:var(--green);border-color:var(--green)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.stats .card{margin:0}.big{font-size:22px;font-weight:600;margin:6px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}.two .card{margin:0}
+table{width:100%;border-collapse:collapse}th{text-align:left;color:var(--mute);font-weight:500;padding:10px 14px;border-bottom:1px solid var(--line)}
+td{padding:9px 14px;border-bottom:1px solid var(--line)}tr.click{cursor:pointer}tr.click:hover{background:var(--side)}
+.tag{background:var(--hl);border-radius:5px;padding:1px 8px;font-size:12px}
+.week{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:12px;color:var(--mute);gap:2px;margin:10px 0 16px}
+.week div{padding:6px 0;border-radius:6px}.week b{display:block;color:var(--ink);font-size:14px}.week .t{background:var(--hl)}
+.item{display:flex;gap:10px;align-items:center;padding:12px;border-bottom:1px solid var(--line);cursor:pointer}.item:last-child{border:0}
+.q{margin:14px 0}.q .ctx{background:var(--side);border-radius:10px;padding:14px;margin-bottom:12px;white-space:pre-line}
+.opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--bg);border-radius:9px;padding:10px 12px;margin:6px 0}
+.opt:hover:not(:disabled){background:var(--side)}.opt.ok{border-color:var(--green);background:#2fb67c22}.opt.bad{border-color:var(--red);background:#ef6a5722}
+.why{color:var(--mute);margin:8px 0 0}
+textarea{width:100%;min-height:220px;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit;background:var(--bg);color:var(--ink);resize:vertical}
+.lesson ul{padding-left:20px}.lesson table td,.lesson table th{padding:6px 10px}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#111;color:#fff;padding:10px 16px;border-radius:9px;display:none;z-index:9}
+.chat{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;background:var(--purple);border:0;color:#fff;font-size:22px;box-shadow:0 4px 14px #0004}
+.timer{font-size:28px;font-weight:600;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<aside>
+  <div class="brand"><span class="logo"></span>Français Prep</div>
+  <div class="qa">⌘ Quick actions</div>
+  <nav class="nav" id="nav"></nav>
+  <div class="side-foot">
+    <div class="gs" onclick="go('/account')"><span>◔ Getting started</span><span class="mute" id="gs"></span></div>
+    <div class="plan"><span>Free plan</span><button class="btn sm" onclick="toast('Demo build: payments are not wired up. Everything is unlocked.')">Upgrade</button></div>
+  </div>
+</aside>
+<main><div class="wrap" id="app"></div></main>
+<button class="chat" onclick="toast('Tip: tap Listening to hear French audio read aloud by your browser.')">💬</button>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============ CONTENT ============ */
+const R=(ctx,q,opts,a,why)=>({ctx,q,opts,a,why});
+const L=(say,q,opts,a,why)=>({say,q,opts,a,why});
+
+const READING={
+ r1:{title:'Reading series 1',min:60,items:[
+  R('Salut Julie ! Je suis arrivé à Montréal hier. Il fait très froid mais la ville est magnifique. Dimanche, on va au marché Jean-Talon ? Rendez-vous à 10 h devant la station de métro. Marc','Où Marc propose-t-il de se retrouver ?',['Au marché','Devant le métro','Chez Julie','À l’aéroport'],1,'« Rendez-vous à 10 h devant la station de métro. »'),
+  R('Avis aux locataires : l’ascenseur sera en panne mardi de 9 h à 17 h pour des travaux de réparation. Merci de votre compréhension.','Que doivent savoir les locataires ?',['L’ascenseur est cassé définitivement','L’ascenseur est indisponible mardi','Les loyers augmentent','Il y a une fête mardi'],1,'Panne temporaire, mardi de 9 h à 17 h.'),
+  R('La bibliothèque municipale est ouverte du mardi au samedi, de 10 h à 18 h. Elle est fermée le dimanche et le lundi.','Quand la bibliothèque est-elle ouverte ?',['Le lundi','Le dimanche','Le jeudi','Aucun jour'],2,'Du mardi au samedi inclut le jeudi.'),
+  R('Je cherche un appartement de deux pièces près du centre-ville, avec un petit balcon. Mon budget est de 1 200 $ par mois, charges comprises.','Que cherche cette personne ?',['Une maison à la campagne','Un studio sans balcon','Un deux-pièces en centre-ville','Un bureau'],2,'« deux pièces près du centre-ville ».'),
+  R('Malgré la pluie, le festival a attiré plus de 20 000 visiteurs. Les organisateurs se disent satisfaits, même si certains concerts ont été raccourcis.','Que dit le texte du festival ?',['Il a été annulé','Il a eu du succès malgré la pluie','Il n’y avait personne','Les organisateurs sont mécontents'],1,'« Malgré la pluie » + 20 000 visiteurs + organisateurs satisfaits.'),
+  R('Selon une étude récente, les Canadiens qui travaillent à distance économisent en moyenne 90 minutes de transport par jour, mais 40 % déclarent se sentir plus isolés.','Quel est l’inconvénient du télétravail mentionné ?',['Le coût du transport','Un sentiment d’isolement','Des horaires plus longs','Moins de salaire'],1,'40 % se sentent plus isolés.')]},
+ r2:{title:'Reading series 2',min:60,items:[
+  R('Objet : Réservation\nBonjour, je souhaiterais réserver une table pour quatre personnes samedi soir, vers 20 h. Une personne est végétarienne. Cordialement, A. Tremblay','Que demande A. Tremblay ?',['Annuler une commande','Une table pour quatre','Un menu à emporter','Un emploi'],1,'« réserver une table pour quatre personnes ».'),
+  R('Le gouvernement a annoncé une hausse du salaire minimum à compter du 1er mai. Les syndicats saluent la mesure, tandis que le patronat craint une hausse des prix.','Quelle est la position du patronat ?',['Il applaudit la décision','Il redoute une hausse des prix','Il demande une grève','Il est indifférent'],1,'« craint une hausse des prix ».'),
+  R('Si j’avais su que le train serait en retard, j’aurais pris la voiture.','Que sait-on de cette personne ?',['Elle a pris la voiture','Elle a pris le train, qui était en retard','Elle déteste voyager','Elle est arrivée en avance'],1,'Irréel du passé : elle ne savait pas, a pris le train.'),
+  R('Le musée propose un tarif réduit aux étudiants et aux personnes de plus de 65 ans, sur présentation d’un justificatif.','Qui peut payer moins cher ?',['Tout le monde','Les étudiants et les aînés','Les enfants seulement','Les touristes'],1,'Étudiants et plus de 65 ans.'),
+  R('Bien que la technologie facilite la communication, elle ne remplace pas toujours le contact humain, estime la sociologue.','Quelle est l’opinion de la sociologue ?',['La technologie est inutile','La technologie ne remplace pas totalement le contact humain','Le contact humain est dépassé','Elle refuse la communication'],1,'« ne remplace pas toujours le contact humain ».'),
+  R('Ce rapport démontre que la politique de recyclage a permis de réduire de 15 % les déchets enfouis, sans pour autant atteindre l’objectif fixé de 25 %.','Que conclut le rapport ?',['L’objectif a été dépassé','L’objectif a été partiellement atteint','Rien n’a changé','Les déchets ont augmenté'],1,'15 % de réduction, mais objectif de 25 % non atteint.')]}
+};
+const LISTENING={
+ l1:{title:'Listening series 1',min:35,items:[
+  L('Bonjour, je voudrais un billet pour Québec, aller simple, pour demain matin.','Que veut la personne ?',['Un billet aller-retour','Un billet aller simple','Une chambre','Un café'],1,'« aller simple ».'),
+  L('Le magasin ferme à vingt heures le jeudi et le vendredi, et à dix-huit heures le samedi.','À quelle heure le magasin ferme-t-il le samedi ?',['16 h','18 h','20 h','22 h'],1,'Dix-huit heures = 18 h.'),
+  L('Allô ? C’est Sophie. Je suis en retard, mon bus est tombé en panne. Commencez sans moi, j’arrive dans vingt minutes.','Pourquoi Sophie est-elle en retard ?',['Elle est malade','Son bus est en panne','Elle a oublié','Elle dort'],1,'« mon bus est tombé en panne ».'),
+  L('Demain, il fera beau le matin, mais des orages sont prévus en fin d’après-midi. Les températures iront de douze à vingt-deux degrés.','Quel temps est prévu en fin d’après-midi ?',['Du soleil','De la neige','Des orages','Du brouillard'],2,'« des orages sont prévus en fin d’après-midi ».'),
+  L('Je me suis inscrit à un cours de cuisine italienne. Ça me permet de rencontrer des gens et de manger de bons plats.','Pourquoi la personne suit-elle ce cours ?',['Pour son travail','Pour rencontrer des gens et bien manger','Pour voyager','Pour perdre du poids'],1,'Deux raisons citées.')]},
+ l2:{title:'Listening series 2',min:35,items:[
+  L('Attention, mesdames et messieurs, le train à destination de Montréal partira de la voie quatre avec dix minutes de retard.','Que se passe-t-il ?',['Le train est annulé','Le train a du retard','Le train est en avance','Le train change de ville'],1,'« avec dix minutes de retard ».'),
+  L('Vous avez bien le droit de contester cette amende, mais il faut le faire dans les trente jours suivant la réception.','Quel est le délai pour contester ?',['10 jours','30 jours','60 jours','1 an'],1,'Trente jours.'),
+  L('Honnêtement, je ne pensais pas que le film me plairait, mais finalement, j’ai adoré la fin.','Quelle est l’opinion de la personne ?',['Elle a détesté','Elle a été agréablement surprise','Elle n’a pas vu le film','Elle est indifférente'],1,'« finalement, j’ai adoré ».')]},
+ l3:{title:'Listening series 3',min:35,items:[
+  L('Le conseil municipal a voté hier la construction d’une nouvelle piste cyclable, malgré l’opposition de certains commerçants.','Qui s’oppose au projet ?',['Les cyclistes','Certains commerçants','Le maire','Les écoles'],1,'« l’opposition de certains commerçants ».'),
+  L('Pourriez-vous me dire où se trouve la pharmacie la plus proche, s’il vous plaît ?','Que demande la personne ?',['L’heure','Le chemin vers une pharmacie','Un médicament précis','Un taxi'],1,'Elle demande où est la pharmacie.'),
+  L('Nous avons décidé de remettre la réunion à jeudi prochain, car plusieurs collègues sont en déplacement.','Pourquoi la réunion est-elle reportée ?',['Manque de salle','Collègues en déplacement','Jour férié','Panne d’électricité'],1,'« plusieurs collègues sont en déplacement ».')]}
+};
+const WRITING={
+ w1:{title:'Writing task 1',min:20,words:[60,120],brief:'Message court (60–120 mots). Informel ou semi-formel.',prompts:[
+  'Vous écrivez à un ami pour l’inviter à votre anniversaire samedi prochain. Donnez l’heure, le lieu et ce qu’il doit apporter.',
+  'Vous avez perdu votre sac dans le train. Écrivez à la gare pour le décrire et demander de l’aide.',
+  'Vous annulez un rendez-vous chez le dentiste. Écrivez un courriel pour vous excuser et proposer une autre date.',
+  'Vous écrivez à votre voisin pour lui demander de baisser la musique le soir.']},
+ w2:{title:'Writing task 2',min:20,words:[120,150],brief:'Lettre ou article (120–150 mots). Racontez, décrivez, expliquez.',prompts:[
+  'Racontez à un ami un voyage récent : où, avec qui, ce que vous avez aimé et moins aimé.',
+  'Un journal local demande à ses lecteurs de décrire leur quartier idéal. Écrivez votre réponse.',
+  'Écrivez à un collègue pour décrire votre nouvelle routine de travail à distance.',
+  'Racontez une expérience qui vous a appris quelque chose d’important.']},
+ w3:{title:'Writing task 3',min:30,words:[120,180],brief:'Texte argumentatif (120–180 mots) : opinion + deux arguments + conclusion.',prompts:[
+  'Faut-il interdire les téléphones portables à l’école ? Donnez votre opinion.',
+  'Le télétravail devrait-il devenir la norme ? Argumentez.',
+  'Les transports en commun devraient-ils être gratuits en ville ?',
+  'Pensez-vous que l’on apprend mieux en voyageant qu’à l’école ?']}
+};
+const SPEAKING={
+ s1:{title:'Speaking task 1',min:10,prep:0,talk:120,brief:'Entretien dirigé (2 min) : présentez-vous.',prompts:['Présentez-vous : nom, origine, travail ou études, loisirs, et pourquoi vous apprenez le français.']},
+ s2:{title:'Speaking task 2',min:10,prep:120,talk:210,brief:'Exercice en interaction : 2 min de préparation, jouez le rôle.',prompts:[
+  'Vous voulez vous inscrire à un cours de natation. Appelez le club pour demander les horaires et les tarifs.',
+  'Vous cherchez un appartement. Posez des questions à l’agent immobilier sur le loyer, les charges et le quartier.',
+  'Vous rapportez un article défectueux. Expliquez le problème et demandez un remboursement ou un échange.',
+  'Vous organisez un voyage avec un ami. Discutez de la destination, du budget et des dates.',
+  'Vous appelez un médecin pour prendre rendez-vous. Décrivez vos symptômes.',
+  'Vous invitez un collègue au restaurant. Proposez un lieu et un jour.',
+  'Vous demandez des renseignements sur un cours de français du soir.',
+  'Vous voulez changer votre billet de train. Appelez le service client.']},
+ s3:{title:'Speaking task 3',min:10,prep:0,talk:270,brief:'Expression d’un point de vue (4 min 30) : sujet, opinion, exemples.',prompts:[
+  'Les réseaux sociaux rapprochent-ils ou isolent-ils les gens ?',
+  'Vaut-il mieux vivre en ville ou à la campagne ?',
+  'Faut-il limiter le temps d’écran des enfants ?',
+  'L’argent fait-il le bonheur ?',
+  'Apprendre une langue étrangère est-il indispensable aujourd’hui ?',
+  'Les voitures devraient-elles être interdites au centre-ville ?']}
+};
+const MOCK={title:'TCF Paper 1',min:60,items:[...READING.r1.items.slice(0,3),...LISTENING.l1.items.slice(0,3),...READING.r2.items.slice(0,3),...LISTENING.l2.items.slice(0,3)]};
+
+const T=(rows)=>'<table>'+rows.map((r,i)=>'<tr>'+r.map(c=>i?`<td>${c}</td>`:`<th>${c}</th>`).join('')+'</tr>').join('')+'</table>';
+const Q=(q,opts,a)=>({q,opts,a});
+const UNITS=[
+ {id:'u1',lvl:'A1',t:'Premiers contacts',lessons:[
+  {id:'a1',t:'Salutations et présentations',body:`<p>Pour se présenter : <b>Je m’appelle…</b>, <b>J’habite à…</b>, <b>Je suis…</b></p>${T([['Situation','Expression'],['Formel','Bonjour, enchanté(e). Vous allez bien ?'],['Informel','Salut ! Ça va ?'],['Au revoir','Au revoir / À bientôt / Salut']])}<p><b>Tu</b> = ami, famille, enfant. <b>Vous</b> = inconnu, patron, politesse.</p>`,q:Q('Quelle phrase est formelle ?',['Salut, ça va ?','Bonjour, comment allez-vous ?','Coucou !'],1)},
+  {id:'a2',t:'Être et avoir',body:`${T([['','être','avoir'],['je','suis','ai'],['tu','es','as'],['il/elle','est','a'],['nous','sommes','avons'],['vous','êtes','avez'],['ils/elles','sont','ont']])}<p>Âge : <i>J’ai 25 ans</i> (avoir, pas être).</p>`,q:Q('« Nous ___ étudiants. »',['avons','sommes','êtes'],1)}]},
+ {id:'u2',lvl:'A1',t:'Les mots de base',lessons:[
+  {id:'a3',t:'Articles et genre',body:`${T([['','masculin','féminin','pluriel'],['défini','le / l’','la / l’','les'],['indéfini','un','une','des']])}<p>Le genre s’apprend avec le mot : <i>un livre, une table</i>.</p>`,q:Q('« ___ maison est grande. »',['Le','La','Un'],1)},
+  {id:'a4',t:'Nombres, heure et âge',body:`<ul><li>0–10 : zéro, un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix</li><li>70 = soixante-dix, 80 = quatre-vingts, 90 = quatre-vingt-dix</li><li>Heure : <i>Il est huit heures et demie.</i></li></ul>`,q:Q('Comment dit-on 80 ?',['septante','quatre-vingts','huitante'],1)}]},
+ {id:'u3',lvl:'A1',t:'Les verbes du quotidien',lessons:[
+  {id:'a5',t:'Verbes en -er',body:`<p>Parler : je parl<b>e</b>, tu parl<b>es</b>, il parl<b>e</b>, nous parl<b>ons</b>, vous parl<b>ez</b>, ils parl<b>ent</b>.</p>`,q:Q('« Nous ___ français. » (parler)',['parlons','parlez','parlent'],0)},
+  {id:'a6',t:'La négation',body:`<p><b>ne … pas</b> entoure le verbe : <i>Je ne parle pas anglais.</i> Devant une voyelle : <i>Je n’aime pas.</i></p><p>Avec un article indéfini : <i>Je n’ai pas de voiture.</i></p>`,q:Q('« Je ___ ai pas de chat. »',['ne','n’','non'],1)}]},
+ {id:'u4',lvl:'A2',t:'Raconter le passé',lessons:[
+  {id:'b1',t:'Le passé composé',body:`<p>avoir/être + participe passé. <i>J’ai mangé.</i> <i>Elle est partie.</i></p><p>Verbes avec <b>être</b> : aller, venir, arriver, partir, naître, mourir, entrer, sortir, monter, descendre, tomber, rester + verbes pronominaux.</p>`,q:Q('« Hier, elle ___ à Paris. »',['a allé','est allée','va aller'],1)},
+  {id:'b2',t:'L’imparfait',body:`<p>Radical du « nous » + -ais, -ais, -ait, -ions, -iez, -aient. <i>Quand j’étais petit, je jouais dehors.</i></p><p>Utilisé pour la description et l’habitude dans le passé.</p>`,q:Q('« Enfant, je ___ au parc. »',['suis allé','allais','irai'],1)}]},
+ {id:'u5',lvl:'A2',t:'Parler du futur et des choses',lessons:[
+  {id:'b3',t:'Le futur proche',body:`<p>aller (présent) + infinitif : <i>Je vais partir demain.</i></p>`,q:Q('« Ils ___ manger. »',['vont','vais','allez'],0)},
+  {id:'b4',t:'Pronoms COD : le, la, les',body:`<p><i>Tu vois Paul ? Oui, je le vois.</i> Au passé composé : <i>Je l’ai vu.</i> (accord : <i>Je l’ai vue</i> pour une femme.)</p>`,q:Q('« Tu connais Marie ? Oui, je ___ connais. »',['le','la','les'],1)}]},
+ {id:'u6',lvl:'A2',t:'Comparer et acheter',lessons:[
+  {id:'b5',t:'Le comparatif',body:`<ul><li>plus … que, moins … que, aussi … que</li><li>meilleur(e) (adj.), mieux (adv.) : <i>Il chante mieux que moi.</i></li></ul>`,q:Q('« Cette pizza est ___ que l’autre. »',['plus bon','meilleure','mieux'],1)},
+  {id:'b6',t:'Au restaurant et au magasin',body:`<ul><li>Je voudrais… / Je prendrai…</li><li>L’addition, s’il vous plaît.</li><li>Combien ça coûte ? / C’est trop cher.</li></ul>`,q:Q('Pour demander poliment :',['Je veux un café.','Je voudrais un café.','Donne café.'],1)}]},
+ {id:'u7',lvl:'B1',t:'Nuancer le récit',lessons:[
+  {id:'c1',t:'Passé composé ou imparfait ?',body:`<p><b>Imparfait</b> = décor, durée. <b>Passé composé</b> = action ponctuelle. <i>Il pleuvait quand je suis sorti.</i></p>`,q:Q('« Je lisais quand le téléphone ___. »',['sonnait','a sonné','sonne'],1)},
+  {id:'c2',t:'Le futur simple',body:`<p>Infinitif + -ai, -as, -a, -ons, -ez, -ont. Irréguliers : être → serai, avoir → aurai, aller → irai, faire → ferai, pouvoir → pourrai.</p>`,q:Q('« Demain, je ___ à Toronto. »',['vais','irai','allais'],1)}]},
+ {id:'u8',lvl:'B1',t:'Poli et précis',lessons:[
+  {id:'c3',t:'Le conditionnel',body:`<p>Radical du futur + terminaisons de l’imparfait : <i>Je voudrais, tu pourrais, il faudrait.</i> Sert à la politesse et à l’hypothèse.</p>`,q:Q('« ___-vous m’aider ? » (poli)',['Pouvez','Pourriez','Pourrez'],1)},
+  {id:'c4',t:'Pronoms y et en',body:`<p><b>y</b> = à/chez/dans + lieu ou chose : <i>J’y vais.</i> <b>en</b> = de + chose / quantité : <i>J’en veux deux.</i></p>`,q:Q('« Tu veux du café ? Oui, j’___ veux. »',['y','en','le'],1)}]},
+ {id:'u9',lvl:'B1',t:'Relier les idées',lessons:[
+  {id:'c5',t:'Connecteurs logiques',body:`${T([['Idée','Connecteurs'],['Cause','parce que, car, puisque'],['Conséquence','donc, alors, c’est pourquoi'],['Opposition','mais, pourtant, cependant'],['Concession','bien que + subj., malgré']])}`,q:Q('« Il pleut, ___ je prends mon parapluie. »',['pourtant','donc','bien que'],1)},
+  {id:'c6',t:'Pronoms relatifs',body:`<ul><li><b>qui</b> = sujet : <i>L’homme qui parle</i></li><li><b>que</b> = COD : <i>Le livre que je lis</i></li><li><b>dont</b> = de : <i>Le film dont je parle</i></li><li><b>où</b> = lieu/temps</li></ul>`,q:Q('« Le film ___ je parle est génial. »',['qui','que','dont'],2)}]},
+ {id:'u10',lvl:'B2',t:'Opinion et doute',lessons:[
+  {id:'d1',t:'Le subjonctif présent',body:`<p>Après : il faut que, bien que, pour que, vouloir que, douter que. <i>Il faut que tu viennes.</i> Irréguliers : être (sois), avoir (aie), aller (aille), faire (fasse).</p>`,q:Q('« Il faut que tu ___ à l’heure. »',['viens','viennes','viendras'],1)},
+  {id:'d2',t:'Les hypothèses avec si',body:`${T([['Type','Structure'],['Réel','si + présent → futur'],['Irréel présent','si + imparfait → conditionnel'],['Irréel passé','si + plus-que-parfait → conditionnel passé']])}`,q:Q('« Si j’avais le temps, je ___ . »',['voyagerai','voyagerais','voyagerais eu'],1)}]},
+ {id:'u11',lvl:'B2',t:'Style et nuance',lessons:[
+  {id:'d3',t:'Le passif',body:`<p>être + participe passé (+ par) : <i>La loi a été votée par le Parlement.</i> Le journalisme l’utilise pour mettre l’action en avant.</p>`,q:Q('Quelle phrase est au passif ?',['Le chat mange.','Le rapport a été publié.','Il publie un rapport.'],1)},
+  {id:'d4',t:'Le discours rapporté',body:`<p>Il a dit : « Je viens. » → Il a dit <b>qu’il venait</b>. Les temps reculent : présent → imparfait, futur → conditionnel, passé composé → plus-que-parfait.</p>`,q:Q('Il a dit : « Je partirai. » → Il a dit qu’il ___.',['partirait','partira','partait'],0)}]},
+ {id:'u12',lvl:'B2',t:'Écrire pour l’examen',lessons:[
+  {id:'d5',t:'Structurer une argumentation',body:`<ol><li>Introduction : reformuler le sujet, donner son avis</li><li>Argument 1 + exemple (<i>D’abord, … Par exemple, …</i>)</li><li>Argument 2 + exemple (<i>De plus, …</i>)</li><li>Conclusion (<i>En somme, … </i>)</li></ol>`,q:Q('Quel connecteur ouvre une conclusion ?',['Par exemple','En conclusion','D’abord'],1)},
+  {id:'d6',t:'Courriel formel',body:`<ul><li>Objet clair</li><li>Madame, Monsieur,</li><li>Je me permets de vous écrire afin de…</li><li>Je vous remercie de votre attention.</li><li>Veuillez agréer, Madame, Monsieur, mes salutations distinguées.</li></ul>`,q:Q('Formule de politesse finale formelle ?',['Bisous','Veuillez agréer mes salutations distinguées','À+'],1)}]}
+];
+const ALL_LESSONS=UNITS.flatMap(u=>u.lessons.map(l=>({...l,unit:u})));
+
+/* ============ STATE ============ */
+const KEY='francais-prep-v1';
+const iso=d=>d.toISOString().slice(0,10);
+const today=()=>iso(new Date());
+let S;
+try{S=JSON.parse(localStorage.getItem(KEY))}catch(e){}
+S=Object.assign({start:today(),done:{},ans:{q:0,c:0},ex:0,lessons:{},papers:0,min:{},best:{},text:{},spoken:{}},S||{});
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+const addMin=m=>{S.min[today()]=(S.min[today()]||0)+m;save()};
+
+/* ============ PLAN ============ */
+function startOfWeek(d){d=new Date(d);const k=(d.getDay()+6)%7;d.setDate(d.getDate()-k);d.setHours(0,0,0,0);return d}
+const PLAN_TEMPLATE=[
+ {id:'p1',t:'Reading series',r:'/reading/r1',min:60,k:'reading'},
+ {id:'p2',t:'Listening series',r:'/listening/l1',min:35,k:'listening'},
+ {id:'p3',t:'Writing set, task',r:'/writing/w1',min:20,k:'writing'},
+ {id:'p4',t:'Speaking set, task',r:'/speaking/s1',min:10,k:'speaking'},
+ {id:'p5',t:'Reading series',r:'/reading/r2',min:60,k:'reading'},
+ {id:'p6',t:'Writing set, task',r:'/writing/w2',min:20,k:'writing'}];
+const READ_IDS=['r1','r2'],LIST_IDS=['l1','l2','l3'],WR=['w1','w2','w3'],SP=['s1','s2','s3'];
+function weekNo(){return Math.min(8,Math.floor((startOfWeek(new Date())-startOfWeek(new Date(S.start)))/6048e5)+1)}
+function weekTasks(w){
+ return PLAN_TEMPLATE.map((p,i)=>{
+  let route=p.r,title;
+  if(p.k==='reading'){const id=READ_IDS[(w-1+(i>0?1:0))%2];route='/reading/'+id;title=READING[id].title}
+  if(p.k==='listening'){const id=LIST_IDS[(w-1)%3];route='/listening/'+id;title=LISTENING[id].title}
+  if(p.k==='writing'){const id=WR[(w-1+(i>2?1:0))%3];route='/writing/'+id;title=WRITING[id].title}
+  if(p.k==='speaking'){const id=SP[(w-1)%3];route='/speaking/'+id;title=SPEAKING[id].title}
+  return {id:`w${w}-${p.id}`,title,route,min:p.min,k:p.k};
+ });
+}
+function markPlan(route){
+ const w=weekNo();const t=weekTasks(w).find(x=>x.route===route&&!S.done[x.id]);
+ if(t)S.done[t.id]=true;save();
+}
+
+/* ============ UI HELPERS ============ */
+const $=s=>document.querySelector(s);
+const app=$('#app');
+function toast(m){const t=$('#toast');t.textContent=m;t.style.display='block';clearTimeout(toast.h);toast.h=setTimeout(()=>t.style.display='none',2800)}
+const go=p=>{location.hash='#'+p};
+const COL={reading:'--purple',listening:'--blue',writing:'--red',speaking:'--green',course:'--orange'};
+const dot=k=>`<span class="dot" style="background:var(${COL[k]||'--blue'})"></span>`;
+const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function say(text){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='fr-FR';u.rate=.9;speechSynthesis.speak(u)}catch(e){toast('Audio not supported in this browser')}}
+
+function nav(route){
+ const link=(p,i,l)=>`<a href="#${p}" class="${route===p?'on':''}">${i} ${l}</a>`;
+ $('#nav').innerHTML=link('/','⌂','Home')+link('/plan','☑','Plan')+link('/course','🎓','Course')+link('/account','👤','Account')+
+  `<div class="sec">Practice</div>`+
+  link('/reading',dot('reading'),'Reading')+link('/listening',dot('listening'),'Listening')+link('/writing',dot('writing'),'Writing')+link('/speaking',dot('speaking'),'Speaking')+
+  `<div class="sec">Continue</div>`+link('/mock','📄','TCF Paper 1')+link('/reading/r1','📖','Reading series 1')+link('/listening/l1','🎧','Listening series 1');
+ const n=gsList().filter(x=>x).length;$('#gs').textContent=n+' of '+gsList().length;
+}
+function gsList(){return[true,!!S.name||S.ex>0||S.papers>0,S.ex>0,Object.keys(S.lessons).length>0,Object.values(S.text).some(Boolean)||Object.keys(S.spoken).length>0,S.papers>0]}
+function pct(n,t){return t?Math.round(n/t*100):0}
+
+/* ============ QUIZ ENGINE ============ */
+function runQuiz(el,{title,items,listen,key,mock,back}){
+ let i=0,score=0,t0=Date.now(),locked=false;
+ const draw=()=>{
+  if(i>=items.length){
+   const mins=Math.max(1,Math.round((Date.now()-t0)/6e4));addMin(mins);
+   if(mock)S.papers++;else S.ex++;
+   if(key){S.best[key]=Math.max(S.best[key]||0,pct(score,items.length))}
+   markPlan(location.hash.slice(1));save();
+   el.innerHTML=`<div class="card"><h3>${esc(title)} · Results</h3><div class="big">${score} / ${items.length} (${pct(score,items.length)}%)</div>
+    <p class="mute">${pct(score,items.length)>=70?'Solide ! Passez à la série suivante.':'Revoyez les explications et réessayez.'}</p>
+    <button class="btn" onclick="location.reload()">Retry</button> <button class="btn ghost" onclick="go('${back}')">Back</button></div>`;return}
+  const it=items[i];locked=false;
+  el.innerHTML=`<div class="card"><div class="row"><h3>${esc(title)}</h3><span class="mute">Question ${i+1} / ${items.length}</span></div>
+   <div class="bar"><i style="width:${i/items.length*100}%"></i></div>
+   <div class="q">${it.ctx?`<div class="ctx">${esc(it.ctx)}</div>`:''}
+   ${it.say?`<div class="ctx"><button class="btn sm" id="play">▶ Play audio</button> <span class="mute">Listen, then answer. You can replay.</span></div>`:''}
+   <b>${esc(it.q)}</b>${it.opts.map((o,k)=>`<button class="opt" data-k="${k}">${esc(o)}</button>`).join('')}
+   <div class="why" id="why"></div></div></div>`;
+  if(it.say){$('#play').onclick=()=>say(it.say);setTimeout(()=>say(it.say),300)}
+  el.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{
+   if(locked)return;locked=true;const k=+b.dataset.k;S.ans.q++;
+   if(k===it.a){score++;S.ans.c++;b.classList.add('ok')}else{b.classList.add('bad');el.querySelectorAll('.opt')[it.a].classList.add('ok')}
+   save();$('#why').innerHTML=`${it.why||''}${it.say?`<br><i>Transcript : ${esc(it.say)}</i>`:''}<br><br><button class="btn sm" id="nx">${i+1<items.length?'Next':'Finish'}</button>`;
+   $('#nx').onclick=()=>{i++;draw()}
+  });
+ };
+ draw();
+}
+
+/* ============ VIEWS ============ */
+const head=(crumb,title,sub,k)=>`<div class="crumb">⌂ <a href="#/" style="color:inherit;text-decoration:none">Home</a>${crumb?' / '+crumb:''}</div><h1>${title}</h1><p class="sub2">${sub||''}</p>`;
+
+function seriesProgress(key){return S.best[key]!=null?S.best[key]:0}
+function practiceRows(){
+ return[
+  ['reading','Reading papers','Comprehension • 1 paper','/mock','mock'],
+  ...Object.entries(READING).map(([id,v])=>['reading',v.title,`Comprehension • ${v.items.length} questions`,'/reading/'+id,id]),
+  ...Object.entries(LISTENING).map(([id,v])=>['listening',v.title,`Comprehension • ${v.items.length} questions`,'/listening/'+id,id]),
+  ...Object.entries(WRITING).map(([id,v])=>['writing',v.title,`Expression • ${v.prompts.length} prompts`,'/writing/'+id,id]),
+  ...Object.entries(SPEAKING).map(([id,v])=>['speaking',v.title,`Expression • ${v.prompts.length} prompt${v.prompts.length>1?'s':''}`,'/speaking/'+id,id])];
+}
+function progressOf(id){
+ if(WRITING[id])return S.text[id+'-done']?100:0;
+ if(SPEAKING[id])return S.spoken[id]?100:0;
+ return seriesProgress(id);
+}
+
+function viewHome(){
+ const w=weekNo(),tasks=weekTasks(w),done=tasks.filter(t=>S.done[t.id]).length;
+ const mon=startOfWeek(new Date()),days=[...Array(7)].map((_,i)=>{const d=new Date(mon);d.setDate(d.getDate()+i);return d});
+ const td=days.filter(d=>iso(d)<=today());
+ const mins=td.reduce((a,d)=>a+(S.min[iso(d)]||0),0);
+ const next=tasks.find(t=>!S.done[t.id])||tasks[0];
+ const lessons=Object.keys(S.lessons).length;
+ const mon0=new Date().toLocaleString('en',{month:'long',year:'numeric'});
+ const today3=tasks.filter(t=>!S.done[t.id]).slice(0,4);
+ const rows=practiceRows();
+ app.innerHTML=head('','Home','Your practice this week, and what to do next.')+
+ `<div class="banner"><a class="pill" href="#${next.route}"><b>Up next</b> ${next.title} · ${next.min} min →</a></div>
+ <div class="grid"><div>
+  <div class="card"><div class="row"><h3>This week</h3><span class="mute">Week ${w} of 8</span></div>
+   <div class="mute">${done} of ${tasks.length} done · ${S.exam?'Exam: '+S.exam:'Exam not booked yet'}</div>
+   <div class="bar"><i style="width:${pct(done,tasks.length)}%"></i></div>
+   <div class="tasks">${tasks.map(t=>`<div class="task" onclick="go('${t.route}')"><span class="chk ${S.done[t.id]?'on':''}"></span>${t.title}<span class="m">${t.min} min</span></div>`).join('')}</div>
+   <a href="#/plan">Open your plan →</a></div>
+  <div class="stats">
+   <div class="card"><div class="mute">Exercises done</div><div class="big">${S.ex}</div><a href="#/reading">View details</a></div>
+   <div class="card"><div class="mute">Course lessons</div><div class="big">${lessons}</div><a href="#/course">View details</a></div>
+   <div class="card"><div class="mute">Mock papers done</div><div class="big">${S.papers}</div><a href="#/mock">View details</a></div></div>
+  <div class="two">
+   <div class="card"><div class="row"><h3>Study time</h3><span class="tag">This week</span></div><div class="big">${mins} min</div>
+    <svg viewBox="0 0 300 80" style="width:100%;margin-top:10px">${(()=>{const v=days.map(d=>S.min[iso(d)]||0),mx=Math.max(10,...v);return v.map((x,i)=>`<rect x="${i*43+6}" y="${70-x/mx*60}" width="28" height="${x/mx*60+1}" rx="4" fill="var(--blue)" opacity=".8"/><text x="${i*43+20}" y="80" font-size="9" text-anchor="middle" fill="var(--mute)">${'MTWTFSS'[i]}</text>`).join('')})()}</svg></div>
+   <div class="card"><div class="row"><h3>Practice</h3><span class="tag">All time</span></div>
+    <div class="card" style="margin:12px 0 0"><div class="mute">Questions answered</div><div class="big">${S.ans.q}</div></div>
+    <div class="card" style="margin:12px 0 0"><div class="mute">Accuracy</div><div class="big">${pct(S.ans.c,S.ans.q)}%</div></div></div></div>
+  <div class="row" style="margin-bottom:10px"><h3 style="margin:0">Continue practising</h3><a href="#/reading">See all</a></div>
+  <div class="card" style="padding:0;overflow:hidden"><table><tr><th>Practice</th><th>Progress</th><th>Status</th></tr>
+  ${rows.map(r=>{const p=r[0]==='reading'&&r[4]==='mock'?pct(S.papers?1:0,1):progressOf(r[4]);return`<tr class="click" onclick="go('${r[3]}')"><td>${dot(r[0])} <b>${r[1]}</b> <span class="mute">${r[2]}</span></td><td style="width:200px"><div class="bar" style="margin:0"><i style="width:${p}%"></i></div></td><td><span class="tag">${p>=100?'Done':p>0?p+'%':'Not started'}</span></td></tr>`}).join('')}</table></div>
+ </div><div>
+  <div class="card"><h3>${mon0}</h3>
+   <div class="week">${days.map(d=>`<div class="${iso(d)===today()?'t':''}">${d.toLocaleString('en',{weekday:'short'})}<b>${d.getDate()}</b></div>`).join('')}</div>
+   <div class="mute" style="margin-bottom:6px">Today</div>
+   <div class="tasks">${today3.length?today3.map(t=>`<div class="task" onclick="go('${t.route}')">${dot(t.k)} ${t.title}<span class="m">${t.min} min</span></div>`).join(''):'<div class="task">All done 🎉</div>'}</div>
+   <div class="mute" style="margin:12px 0 6px">Any time</div><div class="tasks"><div class="task" onclick="go('/course')">${dot('course')} Continue learning<span class="m">First unit free</span></div></div></div>
+  <div class="card"><div class="mute">${dot('reading')} Mock exam</div><h3 style="margin:8px 0 2px">${MOCK.title}</h3><div class="mute">${MOCK.items.length} questions • sample</div><br><button class="btn ghost sm" onclick="go('/mock')">Start paper</button></div>
+  <div class="card"><div class="mute">${dot('course')} Full course</div><h3 style="margin:8px 0 2px">Get the full course</h3><div class="mute">One payment, no subscription.</div><br><button class="btn sm" onclick="toast('Demo build: payments not wired up.')">Upgrade</button></div>
+ </div></div>
+ <p class="mute" style="margin-top:30px;border-top:1px solid var(--line);padding-top:16px;font-size:12px">Français Prep is an independent practice tool. It is not affiliated with or endorsed by France Éducation international. TCF Canada is a trademark of its owner; the name is used only to describe the exam this site prepares candidates for. Sample content only.</p>`;
+}
+
+function viewPlan(){
+ const cur=weekNo();
+ app.innerHTML=head('Plan','Plan','8-week path from A1 to B2 exam readiness.')+
+ `<div class="card"><label>Exam date (optional) <input type="date" value="${S.exam||''}" onchange="S.exam=this.value;save();toast('Saved')" style="margin-left:8px;padding:5px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)"></label></div>`+
+ [...Array(8)].map((_,k)=>{const w=k+1,t=weekTasks(w),d=t.filter(x=>S.done[x.id]).length;
+  return`<div class="card"><div class="row"><h3>Week ${w}${w===cur?' · current':''}</h3><span class="mute">${d} of ${t.length} done</span></div>
+  <div class="bar"><i style="width:${pct(d,t.length)}%"></i></div>
+  <div class="tasks">${t.map(x=>`<div class="task" onclick="go('${x.route}')"><span class="chk ${S.done[x.id]?'on':''}"></span>${x.title}<span class="m">${x.min} min</span></div>`).join('')}</div></div>`}).join('');
+}
+
+function viewCourse(){
+ const total=ALL_LESSONS.length,d=Object.keys(S.lessons).length;
+ app.innerHTML=head('Course','Course',`${d} of ${total} lessons complete · A1 → B2`)+
+ `<div class="bar"><i style="width:${pct(d,total)}%"></i></div>`+
+ UNITS.map((u,i)=>`<div class="card"><div class="row"><h3>Unit ${i+1} · ${u.t}</h3><span class="tag">${u.lvl}${i===0?' · free':''}</span></div>
+  <div style="margin-top:8px">${u.lessons.map(l=>`<div class="item" onclick="go('/lesson/${l.id}')"><span class="chk ${S.lessons[l.id]?'on':''}"></span>${l.t}</div>`).join('')}</div></div>`).join('');
+}
+function viewLesson(id){
+ const idx=ALL_LESSONS.findIndex(l=>l.id===id);const l=ALL_LESSONS[idx];if(!l)return go('/course');
+ app.innerHTML=head(`<a href="#/course" style="color:inherit;text-decoration:none">Course</a> / ${l.t}`,l.t,`${l.unit.lvl} · ${l.unit.t}`)+
+ `<div class="card lesson">${l.body}</div><div class="card"><h3>Quick check</h3><div id="qc"></div></div>
+  <div class="row"><button class="btn ghost" onclick="go('${idx>0?'/lesson/'+ALL_LESSONS[idx-1].id:'/course'}')">← Previous</button>
+  <button class="btn" onclick="go('${idx<ALL_LESSONS.length-1?'/lesson/'+ALL_LESSONS[idx+1].id:'/course'}')">Next →</button></div>`;
+ const t0=Date.now();
+ $('#qc').innerHTML=`<div class="q"><b>${esc(l.q.q)}</b>${l.q.opts.map((o,k)=>`<button class="opt" data-k="${k}">${esc(o)}</button>`).join('')}<div class="why" id="why"></div></div>`;
+ document.querySelectorAll('#qc .opt').forEach(b=>b.onclick=()=>{
+  const k=+b.dataset.k;if(k===l.q.a){b.classList.add('ok');if(!S.lessons[l.id]){S.lessons[l.id]=true;S.ans.q++;S.ans.c++;addMin(Math.max(1,Math.round((Date.now()-t0)/6e4)));save()}$('#why').textContent='Correct ✔ Lesson complete.'}
+  else{b.classList.add('bad');$('#why').textContent='Not quite, try again.';S.ans.q++;save()}});
+}
+
+function viewList(kind){
+ const src={reading:READING,listening:LISTENING,writing:WRITING,speaking:SPEAKING}[kind];
+ const title=kind[0].toUpperCase()+kind.slice(1);
+ app.innerHTML=head(title,title,{reading:'Short texts with multiple-choice questions.',listening:'Audio is read aloud by your browser (French voice).',writing:'Three TCF-style tasks. Draft, count words, self-check.',speaking:'Timed prompts. Record yourself with your phone or just speak aloud.'}[kind])+
+ `<div class="card" style="padding:0">${Object.entries(src).map(([id,v])=>{const p=progressOf(id);return`<div class="item" onclick="go('/${kind}/${id}')">${dot(kind)}<b>${v.title}</b><span class="mute">${v.items?v.items.length+' questions':v.prompts.length+' prompts'} · ${v.min} min</span><span class="tag" style="margin-left:auto">${p>=100?'Done':p>0?p+'%':'Not started'}</span></div>`}).join('')}</div>`+
+ (kind==='reading'?`<div class="card" style="padding:0"><div class="item" onclick="go('/mock')">${dot('reading')}<b>${MOCK.title}</b><span class="mute">full mock paper</span></div></div>`:'');
+}
+function viewQuiz(kind,id){
+ const v=({reading:READING,listening:LISTENING})[kind][id];if(!v)return go('/'+kind);
+ app.innerHTML=head(`<a href="#/${kind}" style="color:inherit;text-decoration:none">${kind[0].toUpperCase()+kind.slice(1)}</a> / ${v.title}`,v.title,v.min+' min recommended')+'<div id="qz"></div>';
+ runQuiz($('#qz'),{title:v.title,items:v.items,key:id,back:'/'+kind});
+}
+function viewMock(){
+ app.innerHTML=head('TCF Paper 1',MOCK.title,'Sample mixed paper: reading and listening items.')+
+ `<div class="card"><div class="timer" id="clock">20:00</div><div class="mute">Suggested time for this sample. Real TCF timing differs.</div></div><div id="qz"></div>`;
+ let s=1200;const h=setInterval(()=>{if(!$('#clock'))return clearInterval(h);s=Math.max(0,s-1);$('#clock').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')},1000);
+ runQuiz($('#qz'),{title:MOCK.title,items:MOCK.items,key:'mock',mock:true,back:'/reading'});
+}
+
+function viewWriting(id){
+ const v=WRITING[id];if(!v)return go('/writing');
+ const pi=+(S.text[id+'-p']||0)%v.prompts.length;
+ app.innerHTML=head(`<a href="#/writing" style="color:inherit;text-decoration:none">Writing</a> / ${v.title}`,v.title,v.brief)+
+ `<div class="card"><div class="row"><h3>Prompt ${pi+1} / ${v.prompts.length}</h3><button class="btn ghost sm" id="np">New prompt</button></div><p>${esc(v.prompts[pi])}</p>
+  <textarea id="ta" placeholder="Écrivez ici…">${esc(S.text[id+'-t'+pi]||'')}</textarea>
+  <div class="row" style="margin-top:8px"><span id="wc" class="mute"></span><button class="btn" id="fin">Mark complete</button></div></div>
+ <div class="card"><h3>Self-check</h3><ul><li>Respecté la consigne et le nombre de mots (${v.words[0]}–${v.words[1]})</li><li>Salutation et formule finale adaptées</li><li>Temps verbaux cohérents</li><li>Connecteurs (d’abord, ensuite, cependant…)</li><li>Relu : accords, accents, ponctuation</li></ul></div>`;
+ const ta=$('#ta'),wc=()=>{const n=(ta.value.trim().match(/\S+/g)||[]).length;$('#wc').textContent=n+' words'+(n<v.words[0]?' · too short':n>v.words[1]?' · too long':' · ✔ in range')};wc();
+ const t0=Date.now();
+ ta.oninput=()=>{S.text[id+'-t'+pi]=ta.value;save();wc()};
+ $('#np').onclick=()=>{S.text[id+'-p']=pi+1;save();viewWriting(id)};
+ $('#fin').onclick=()=>{S.text[id+'-done']=true;S.ex++;addMin(Math.max(1,Math.round((Date.now()-t0)/6e4)));markPlan('/writing/'+id);save();toast('Saved. Great work!');go('/writing')};
+}
+function viewSpeaking(id){
+ const v=SPEAKING[id];if(!v)return go('/speaking');
+ const pi=+(S.spoken[id+'-p']||0)%v.prompts.length;
+ app.innerHTML=head(`<a href="#/speaking" style="color:inherit;text-decoration:none">Speaking</a> / ${v.title}`,v.title,v.brief)+
+ `<div class="card"><div class="row"><h3>Prompt ${pi+1} / ${v.prompts.length}</h3><button class="btn ghost sm" id="np">New prompt</button></div><p>${esc(v.prompts[pi])}</p>
+  <div class="timer" id="tm">${fmt(v.prep||v.talk)}</div><div class="mute" id="ph">${v.prep?'Preparation':'Speaking time'}</div><br>
+  <button class="btn" id="go">Start</button> <button class="btn ghost" id="done">Mark complete</button></div>
+ <div class="card"><h3>Tips</h3><ul><li>Parlez en phrases complètes, même simples.</li><li>Utilisez des connecteurs pour enchaîner.</li><li>Si vous cherchez un mot, reformulez en français.</li></ul></div>`;
+ let h,t0=Date.now();
+ const run=(sec,label,next)=>{clearInterval(h);$('#ph').textContent=label;$('#tm').textContent=fmt(sec);h=setInterval(()=>{if(!$('#tm'))return clearInterval(h);sec--;$('#tm').textContent=fmt(Math.max(sec,0));if(sec<=0){clearInterval(h);next&&next()}},1000)};
+ $('#go').onclick=()=>{t0=Date.now();v.prep?run(v.prep,'Preparation',()=>run(v.talk,'Speaking time',()=>toast('Time is up'))):run(v.talk,'Speaking time',()=>toast('Time is up'))};
+ $('#np').onclick=()=>{clearInterval(h);S.spoken[id+'-p']=pi+1;save();viewSpeaking(id)};
+ $('#done').onclick=()=>{clearInterval(h);S.spoken[id]=true;S.ex++;addMin(Math.max(1,Math.round((Date.now()-t0)/6e4)));markPlan('/speaking/'+id);save();toast('Saved');go('/speaking')};
+}
+const fmt=s=>String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
+
+function viewAccount(){
+ const g=['Create your account','Set your name','Complete an exercise','Finish a course lesson','Write or speak a prompt','Take a mock paper'];
+ const l=gsList();
+ app.innerHTML=head('Account','Account','Your profile and progress. Data is stored in this browser only.')+
+ `<div class="card"><label>Name <input id="nm" value="${esc(S.name||'')}" style="margin-left:8px;padding:6px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)"></label>
+  <button class="btn sm" onclick="S.name=$('#nm').value.trim();save();toast('Saved');nav('/account')">Save</button></div>
+  <div class="card"><h3>Getting started</h3><div class="tasks">${g.map((x,i)=>`<div class="task"><span class="chk ${l[i]?'on':''}"></span>${x}</div>`).join('')}</div></div>
+  <div class="card"><h3>Data</h3><p class="mute">Progress lives in your browser's local storage.</p><button class="btn ghost" onclick="if(confirm('Reset all progress?')){localStorage.removeItem('${KEY}');location.reload()}">Reset progress</button></div>`;
+}
+
+/* ============ ROUTER ============ */
+function route(){
+ try{speechSynthesis.cancel()}catch(e){}
+ const p=(location.hash.slice(1)||'/'),[,a,b]=p.split('/');
+ nav(p.split('/').slice(0,2).join('/')||'/');
+ window.scrollTo(0,0);
+ if(p==='/')viewHome();
+ else if(a==='plan')viewPlan();
+ else if(a==='course')viewCourse();
+ else if(a==='lesson')viewLesson(b);
+ else if(a==='account')viewAccount();
+ else if(a==='mock')viewMock();
+ else if(a==='reading'||a==='listening')b?viewQuiz(a,b):viewList(a);
+ else if(a==='writing')b?viewWriting(b):viewList(a);
+ else if(a==='speaking')b?viewSpeaking(b):viewList(a);
+ else viewHome();
+}
+addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
